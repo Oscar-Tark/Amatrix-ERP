@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Main" GeneratedClassName="app_connection_settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="user_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Admin</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Server_addr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Internal Server</Value>
+    </Setting>
+    <Setting Name="Db_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Internal Data-Base</Value>
+    </Setting>
+    <Setting Name="local" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

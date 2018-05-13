@@ -1,0 +1,3356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFDFA748-0BA6-482A-88E2-7EFC5DDB0B9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>installicn.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>CB0F1515D1DDF83E679536895E95C2CCF68D5871</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <StartupObject>Main.Program</StartupObject>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <PublishUrl>E:\Users\O.A.C\Music\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Amatrix</ProductName>
+    <PublisherName>Astreous Technologies</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.2.0.4</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="am_main, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Base_ASQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Extern_ASQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Ky_A, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="LumiSoft.Net, Version=2.0.4518.22786, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.PointOfService, Version=1.12.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Point Of Service\SDK\Microsoft.PointOfService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PointOfService.Service, Version=1.12.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Point Of Service\Microsoft.PointOfService.Service.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="SQLCEBasql, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tbxwbx_, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acc invce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acc invce.Designer.cs">
+      <DependentUpon>acc invce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acc journ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acc journ.Designer.cs">
+      <DependentUpon>acc journ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acc ledg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acc ledg.Designer.cs">
+      <DependentUpon>acc ledg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acc rep wiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acc rep wiz.Designer.cs">
+      <DependentUpon>acc rep wiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acc trns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acc trns.Designer.cs">
+      <DependentUpon>acc trns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acc_journ_sett.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>acc_journ_sett.settings</DependentUpon>
+    </Compile>
+    <Compile Include="acc_linker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acc_linker.Designer.cs">
+      <DependentUpon>acc_linker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advert_Submit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advert_Submit.Designer.cs">
+      <DependentUpon>Advert_Submit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advort.Designer.cs">
+      <DependentUpon>Advort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advort_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advort_settings.Designer.cs">
+      <DependentUpon>Advort_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amatrix About.Designer.cs">
+      <DependentUpon>Amatrix About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix Server Lite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amatrix Server Lite.Designer.cs">
+      <DependentUpon>Amatrix Server Lite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix Sever Client Lite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amatrix Sever Client Lite.Designer.cs">
+      <DependentUpon>Amatrix Sever Client Lite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amatrix.Designer.cs">
+      <DependentUpon>Amatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmatrixAIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmatrixAIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AmatrixAI_dtst_aia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmatrixAI_dtst_aia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix_Choose_Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amatrix_Choose_Doc.Designer.cs">
+      <DependentUpon>Amatrix_Choose_Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix_ServerEDTM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Amatrix_ServerEDTM.Designer.cs">
+      <DependentUpon>Amatrix_ServerEDTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amcompnfo_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>amcompnfo_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AMDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AMDS.Designer.cs">
+      <DependentUpon>AMDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AMDSDB.cs">
+      <DependentUpon>AMDSDB.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AMDSDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AMDSDB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse5_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse5_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AmdtbseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmdtbseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AmdtbseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmdtbseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse_3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse_3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse_4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse_4DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse_4DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse_4DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse_6DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse_6DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Amdtbse_6DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amdtbse_6DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Api.cs" />
+    <Compile Include="app abt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app abt.Designer.cs">
+      <DependentUpon>app abt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App Shoppe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App Shoppe.Designer.cs">
+      <DependentUpon>App Shoppe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App Workbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App Workbook.Designer.cs">
+      <DependentUpon>App Workbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_FILEPOOL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application_FILEPOOL.Designer.cs">
+      <DependentUpon>Application_FILEPOOL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app_connection_settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>app_connection_settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_mgmt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendance_mgmt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Attendnce_mgmt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendnce_mgmt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="attndnce_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>attndnce_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BSAMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BSAMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Calc optn 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc optn 1.Designer.cs">
+      <DependentUpon>Calc optn 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar alrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar alrm.Designer.cs">
+      <DependentUpon>Calendar alrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="casbook_dataset_ledg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>casbook_dataset_ledg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cashbook_dtst.cs">
+      <DependentUpon>Cashbook_dtst.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cashbook_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cashbook_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Choose Empl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose Empl.designer.cs">
+      <DependentUpon>Choose Empl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacts.Designer.cs">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Currencies.Designer.cs">
+      <DependentUpon>Currencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currencies_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Currencies_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Doc_stdio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc_stdio.Designer.cs">
+      <DependentUpon>Doc_stdio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc_stdio_canopner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc_stdio_canopner.Designer.cs">
+      <DependentUpon>Doc_stdio_canopner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doc_stdio_Page_stle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doc_stdio_Page_stle.Designer.cs">
+      <DependentUpon>doc_stdio_Page_stle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doc_stdio_secs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc_stdio_secs.Designer.cs">
+      <DependentUpon>Doc_stdio_secs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eml send.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eml send.Designer.cs">
+      <DependentUpon>eml send.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choicesett.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>choicesett.settings</DependentUpon>
+    </Compile>
+    <Compile Include="classfile_GUI types.cs" />
+    <Compile Include="cntct_nfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cntct_nfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cnt_bs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cnt_bs.Designer.cs">
+      <DependentUpon>cnt_bs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cnt_journ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cnt_journ.Designer.cs">
+      <DependentUpon>cnt_journ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cnt_mgmt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cnt_mgmt.Designer.cs">
+      <DependentUpon>cnt_mgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cols.Designer.cs">
+      <DependentUpon>cols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="companynfo_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>companynfo_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cust_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eml send_Credentials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eml send_Credentials.Designer.cs">
+      <DependentUpon>eml send_Credentials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emply_payr_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Emply_payr_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empl_selc_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empl_selc_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="err_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>err_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="es_horizon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="es_horizon.Designer.cs">
+      <DependentUpon>es_horizon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Files_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Files_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="First use optn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="First use optn.Designer.cs">
+      <DependentUpon>First use optn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="First use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="First use.Designer.cs">
+      <DependentUpon>First use.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amatrix Error reporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amatrix Error reporter.Designer.cs">
+      <DependentUpon>Amatrix Error reporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fles_mng_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fles_mng_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gadg_custombook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gadg_custombook.Designer.cs">
+      <DependentUpon>gadg_custombook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gadg_grph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gadg_grph.Designer.cs">
+      <DependentUpon>gadg_grph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gadg_maps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gadg_maps.Designer.cs">
+      <DependentUpon>Gadg_maps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gadg_pics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gadg_pics.Designer.cs">
+      <DependentUpon>gadg_pics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gadg_resz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gadg_resz.Designer.cs">
+      <DependentUpon>gadg_resz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guided_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guided_Function.Designer.cs">
+      <DependentUpon>Guided_Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Searcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Searcher.Designer.cs">
+      <DependentUpon>Inventory Searcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoice_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>invoice_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Isync.cs" />
+    <Compile Include="journ_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>journ_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="L.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>L.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Library.cs" />
+    <Compile Include="loggy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loggy.Designer.cs">
+      <DependentUpon>loggy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loggy_adv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loggy_adv.Designer.cs">
+      <DependentUpon>loggy_adv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logstcs_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logstcs_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="logs_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logs_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="logs_pick_prods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logs_pick_prods.Designer.cs">
+      <DependentUpon>logs_pick_prods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logs_prod2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logs_prod2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="logs_prod_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logs_prod_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox_Image.Designer.cs">
+      <DependentUpon>MessageBox_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt hr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt hr.Designer.cs">
+      <DependentUpon>mgmt hr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt opr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt opr.Designer.cs">
+      <DependentUpon>mgmt opr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt pr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt pr.Designer.cs">
+      <DependentUpon>mgmt pr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt prj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt prj.Designer.cs">
+      <DependentUpon>mgmt prj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt supch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt supch.Designer.cs">
+      <DependentUpon>mgmt supch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt.Designer.cs">
+      <DependentUpon>mgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_Linkto_acc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_Linkto_acc.Designer.cs">
+      <DependentUpon>mgmt_Linkto_acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_opr_choose_routeinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_opr_choose_routeinfo.Designer.cs">
+      <DependentUpon>mgmt_opr_choose_routeinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_prj_Employees_PROJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_prj_Employees_PROJ.Designer.cs">
+      <DependentUpon>mgmt_prj_Employees_PROJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_pr_payrolls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_pr_payrolls.Designer.cs">
+      <DependentUpon>mgmt_pr_payrolls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_purchase_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_purchase_information.Designer.cs">
+      <DependentUpon>mgmt_purchase_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_sls_ordr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_sls_ordr.Designer.cs">
+      <DependentUpon>mgmt_sls_ordr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_supch_resent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_supch_resent.Designer.cs">
+      <DependentUpon>mgmt_supch_resent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_supch_units.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_supch_units.Designer.cs">
+      <DependentUpon>mgmt_supch_units.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_supch_warranties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_supch_warranties.Designer.cs">
+      <DependentUpon>mgmt_supch_warranties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misc_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Misc_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misc_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Misc_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misc_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="outsrce_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>outsrce_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="p2p_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>p2p_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Peyed_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Peyed_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PO_invntry_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PO_invntry_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintOptions.designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print_preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_preview.Designer.cs">
+      <DependentUpon>Print_preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prjmgmt_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prjmgmt_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prj_employees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prj_employees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prj_tasks_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prj_tasks_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prob_logstc_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prob_logstc_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prodmgmt_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prodmgmt_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mgmt_supch_Product Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgmt_supch_Product Type.Designer.cs">
+      <DependentUpon>mgmt_supch_Product Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prod_bulk_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prod_bulk_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prod_stock_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prod_stock_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prod_typ_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prod_typ_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseBook_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseBook_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_ordr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purchase_ordr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purch_info_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Purch_info_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purch_ordr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purch_ordr.Designer.cs">
+      <DependentUpon>Purch_ordr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwrd.Designer.cs">
+      <DependentUpon>pwrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ready-care REP-bug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ready-care REP-bug.Designer.cs">
+      <DependentUpon>ready-care REP-bug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ready-Care_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ready-Care_Control.Designer.cs">
+      <DependentUpon>Ready-Care_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reparttn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reparttn.Designer.cs">
+      <DependentUpon>reparttn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\gadg_login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\gadg_login.Designer.cs">
+      <DependentUpon>gadg_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesBook_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesBook_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Scrn_snip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrn_snip.Designer.cs">
+      <DependentUpon>Scrn_snip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scrsve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrsve.Designer.cs">
+      <DependentUpon>Scrsve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scrsve_termin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrsve_termin.Designer.cs">
+      <DependentUpon>Scrsve_termin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security_PWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security_PWD.Designer.cs">
+      <DependentUpon>Security_PWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sec_AMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sec_AMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.cs" />
+    <Compile Include="Helper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper.Designer.cs">
+      <DependentUpon>Helper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="acc invce.resx">
+      <DependentUpon>acc invce.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acc journ.resx">
+      <DependentUpon>acc journ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acc ledg.resx">
+      <DependentUpon>acc ledg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acc rep wiz.resx">
+      <DependentUpon>acc rep wiz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acc trns.resx">
+      <DependentUpon>acc trns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix About.resx">
+      <DependentUpon>Amatrix About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix Error reporter.resx">
+      <DependentUpon>Amatrix Error reporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix.resx">
+      <DependentUpon>Amatrix.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMDS.resx">
+      <DependentUpon>AMDS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app abt.resx">
+      <DependentUpon>app abt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App Shoppe.resx">
+      <DependentUpon>App Shoppe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App Workbook.resx">
+      <DependentUpon>App Workbook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc optn 1.resx">
+      <DependentUpon>Calc optn 1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar alrm.resx">
+      <DependentUpon>Calendar alrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cnt_journ.resx">
+      <DependentUpon>cnt_journ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cnt_mgmt.resx">
+      <DependentUpon>cnt_mgmt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cols.resx">
+      <DependentUpon>cols.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es_horizon.resx">
+      <DependentUpon>es_horizon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="First use optn.resx">
+      <DependentUpon>First use optn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="First use.resx">
+      <DependentUpon>First use.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gadg_custombook.resx">
+      <DependentUpon>gadg_custombook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gadg_grph.resx">
+      <DependentUpon>gadg_grph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gadg_pics.resx">
+      <DependentUpon>gadg_pics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guided_Function.resx">
+      <DependentUpon>Guided_Function.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper.resx">
+      <DependentUpon>Helper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>L.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loggy.resx">
+      <DependentUpon>loggy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt hr.resx">
+      <DependentUpon>mgmt hr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt opr.resx">
+      <DependentUpon>mgmt opr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt pr.resx">
+      <DependentUpon>mgmt pr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt prj.resx">
+      <DependentUpon>mgmt prj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt supch.resx">
+      <DependentUpon>mgmt supch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwrd.resx">
+      <DependentUpon>pwrd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\gadg_login.resx">
+      <DependentUpon>gadg_login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrn_snip.resx">
+      <DependentUpon>Scrn_snip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrsve.resx">
+      <DependentUpon>Scrsve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen.resx">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thumbns.resx">
+      <DependentUpon>thumbns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual window manager.resx">
+      <DependentUpon>Virtual window manager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizard_newconn-bkk_cust.resx">
+      <DependentUpon>wizard_newconn-bkk_cust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard_sdf.resx">
+      <DependentUpon>Wizard_sdf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ready Care extention.cs" />
+    <Compile Include="SO_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SO_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SO_invntry_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SO_invntry_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen.Designer.cs">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suppmgmt_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suppmgmt_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="svewin.cs" />
+    <Compile Include="Tasks_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tasks_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="textconv tool.cs" />
+    <Compile Include="thumbns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transmn_dtst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>transmn_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UCBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual window manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual window manager.Designer.cs">
+      <DependentUpon>Virtual window manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>visual.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Vvm_Wins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vvm_Wins.Designer.cs">
+      <DependentUpon>Vvm_Wins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizard_newconn-bkk_cust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizard_newconn-bkk_cust.Designer.cs">
+      <DependentUpon>wizard_newconn-bkk_cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard_sdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard_sdf.Designer.cs">
+      <DependentUpon>Wizard_sdf.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AmatrixAI.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amdtbse.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amdtbse5.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amdtbse_2.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amdtbse_3.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amdtbse_4.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="acc_journ_sett.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>acc_journ_sett.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="AmatrixAIDataSet.xsc">
+      <DependentUpon>AmatrixAIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AmatrixAIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmatrixAIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmatrixAIDataSet.xss">
+      <DependentUpon>AmatrixAIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AmatrixAI_dtst_aia.xsc">
+      <DependentUpon>AmatrixAI_dtst_aia.xsd</DependentUpon>
+    </None>
+    <None Include="AmatrixAI_dtst_aia.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmatrixAI_dtst_aia.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmatrixAI_dtst_aia.xss">
+      <DependentUpon>AmatrixAI_dtst_aia.xsd</DependentUpon>
+    </None>
+    <None Include="amcompnfo_dtst.xsc">
+      <DependentUpon>amcompnfo_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="amcompnfo_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>amcompnfo_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="amcompnfo_dtst.xss">
+      <DependentUpon>amcompnfo_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="AMDSDB.xsc">
+      <DependentUpon>AMDSDB.xsd</DependentUpon>
+    </None>
+    <None Include="AMDSDB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AMDSDB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AMDSDB.xss">
+      <DependentUpon>AMDSDB.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse5DataSet.xsc">
+      <DependentUpon>Amdtbse5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse5DataSet.xss">
+      <DependentUpon>Amdtbse5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse5_dtst.xsc">
+      <DependentUpon>Amdtbse5_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse5_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse5_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse5_dtst.xss">
+      <DependentUpon>Amdtbse5_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="AmdtbseDataSet2.xsc">
+      <DependentUpon>AmdtbseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AmdtbseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmdtbseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmdtbseDataSet2.xss">
+      <DependentUpon>AmdtbseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AmdtbseDataSet3.xsc">
+      <DependentUpon>AmdtbseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AmdtbseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmdtbseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmdtbseDataSet3.xss">
+      <DependentUpon>AmdtbseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_3DataSet.xsc">
+      <DependentUpon>Amdtbse_3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse_3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse_3DataSet.xss">
+      <DependentUpon>Amdtbse_3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_4DataSet.xsc">
+      <DependentUpon>Amdtbse_4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse_4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse_4DataSet.xss">
+      <DependentUpon>Amdtbse_4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_4DataSet1.xsc">
+      <DependentUpon>Amdtbse_4DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_4DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse_4DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse_4DataSet1.xss">
+      <DependentUpon>Amdtbse_4DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_6DataSet.xsc">
+      <DependentUpon>Amdtbse_6DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_6DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse_6DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse_6DataSet.xss">
+      <DependentUpon>Amdtbse_6DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_6DataSet1.xsc">
+      <DependentUpon>Amdtbse_6DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Amdtbse_6DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Amdtbse_6DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Amdtbse_6DataSet1.xss">
+      <DependentUpon>Amdtbse_6DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <EmbeddedResource Include="acc_linker.resx">
+      <DependentUpon>acc_linker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advert_Submit.resx">
+      <DependentUpon>Advert_Submit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advort.resx">
+      <DependentUpon>Advort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advort_settings.resx">
+      <DependentUpon>Advort_settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix Server Lite.resx">
+      <DependentUpon>Amatrix Server Lite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix Sever Client Lite.resx">
+      <DependentUpon>Amatrix Sever Client Lite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix_Choose_Doc.resx">
+      <DependentUpon>Amatrix_Choose_Doc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amatrix_ServerEDTM.resx">
+      <DependentUpon>Amatrix_ServerEDTM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application_FILEPOOL.resx">
+      <DependentUpon>Application_FILEPOOL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app_connection_settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>app_connection_settings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose Empl.resx">
+      <DependentUpon>Choose Empl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts.resx">
+      <DependentUpon>Contacts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Currencies.resx">
+      <DependentUpon>Currencies.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc_stdio.resx">
+      <DependentUpon>Doc_stdio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc_stdio_canopner.resx">
+      <DependentUpon>Doc_stdio_canopner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doc_stdio_Page_stle.resx">
+      <DependentUpon>doc_stdio_Page_stle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc_stdio_secs.resx">
+      <DependentUpon>Doc_stdio_secs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eml send.resx">
+      <DependentUpon>eml send.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cnt_bs.resx">
+      <DependentUpon>cnt_bs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eml send_Credentials.resx">
+      <DependentUpon>eml send_Credentials.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadg_maps.resx">
+      <DependentUpon>Gadg_maps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gadg_resz.resx">
+      <DependentUpon>gadg_resz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Searcher.resx">
+      <DependentUpon>Inventory Searcher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loggy_adv.resx">
+      <DependentUpon>loggy_adv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logs_pick_prods.resx">
+      <DependentUpon>logs_pick_prods.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox_Image.resx">
+      <DependentUpon>MessageBox_Image.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt.resx">
+      <DependentUpon>mgmt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_Linkto_acc.resx">
+      <DependentUpon>mgmt_Linkto_acc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_opr_choose_routeinfo.resx">
+      <DependentUpon>mgmt_opr_choose_routeinfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_prj_Employees_PROJ.resx">
+      <DependentUpon>mgmt_prj_Employees_PROJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_pr_payrolls.resx">
+      <DependentUpon>mgmt_pr_payrolls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_purchase_information.resx">
+      <DependentUpon>mgmt_purchase_information.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_sls_ordr.resx">
+      <DependentUpon>mgmt_sls_ordr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_supch_resent.resx">
+      <DependentUpon>mgmt_supch_resent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_supch_units.resx">
+      <DependentUpon>mgmt_supch_units.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_supch_warranties.resx">
+      <DependentUpon>mgmt_supch_warranties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_preview.resx">
+      <DependentUpon>Print_preview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgmt_supch_Product Type.resx">
+      <DependentUpon>mgmt_supch_Product Type.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purch_ordr.resx">
+      <DependentUpon>Purch_ordr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ready-care REP-bug.resx">
+      <DependentUpon>ready-care REP-bug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ready-Care_Control.resx">
+      <DependentUpon>Ready-Care_Control.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reparttn.resx">
+      <DependentUpon>reparttn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrsve_termin.resx">
+      <DependentUpon>Scrsve_termin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security_PWD.resx">
+      <DependentUpon>Security_PWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppliers.resx">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vvm_Wins.resx">
+      <DependentUpon>Vvm_Wins.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Attendance_mgmt.xsc">
+      <DependentUpon>Attendance_mgmt.xsd</DependentUpon>
+    </None>
+    <None Include="Attendance_mgmt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attendance_mgmt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Attendance_mgmt.xss">
+      <DependentUpon>Attendance_mgmt.xsd</DependentUpon>
+    </None>
+    <None Include="Attendnce_mgmt.xsc">
+      <DependentUpon>Attendnce_mgmt.xsd</DependentUpon>
+    </None>
+    <None Include="Attendnce_mgmt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attendnce_mgmt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Attendnce_mgmt.xss">
+      <DependentUpon>Attendnce_mgmt.xsd</DependentUpon>
+    </None>
+    <None Include="attndnce_dtst.xsc">
+      <DependentUpon>attndnce_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="attndnce_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>attndnce_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="attndnce_dtst.xss">
+      <DependentUpon>attndnce_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="BSAMDataSet.xsc">
+      <DependentUpon>BSAMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BSAMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BSAMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BSAMDataSet.xss">
+      <DependentUpon>BSAMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="casbook_dataset_ledg.xsc">
+      <DependentUpon>casbook_dataset_ledg.xsd</DependentUpon>
+    </None>
+    <None Include="casbook_dataset_ledg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>casbook_dataset_ledg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="casbook_dataset_ledg.xss">
+      <DependentUpon>casbook_dataset_ledg.xsd</DependentUpon>
+    </None>
+    <None Include="Cashbook_dtst.xsc">
+      <DependentUpon>Cashbook_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Cashbook_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cashbook_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cashbook_dtst.xss">
+      <DependentUpon>Cashbook_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="choicesett.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>choicesett.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="cntct_nfo.xsc">
+      <DependentUpon>cntct_nfo.xsd</DependentUpon>
+    </None>
+    <None Include="cntct_nfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cntct_nfo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cntct_nfo.xss">
+      <DependentUpon>cntct_nfo.xsd</DependentUpon>
+    </None>
+    <None Include="companynfo_dataset.xsc">
+      <DependentUpon>companynfo_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="companynfo_dataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>companynfo_dataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="companynfo_dataset.xss">
+      <DependentUpon>companynfo_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Currencies_dtst.xsc">
+      <DependentUpon>Currencies_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Currencies_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Currencies_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Currencies_dtst.xss">
+      <DependentUpon>Currencies_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Custom.config" />
+    <None Include="Cust_dtst.xsc">
+      <DependentUpon>Cust_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Cust_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cust_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cust_dtst.xss">
+      <DependentUpon>Cust_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Emply_payr_dtst.xsc">
+      <DependentUpon>Emply_payr_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Emply_payr_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Emply_payr_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Emply_payr_dtst.xss">
+      <DependentUpon>Emply_payr_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="empl_selc_dtst.xsc">
+      <DependentUpon>empl_selc_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="empl_selc_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>empl_selc_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="empl_selc_dtst.xss">
+      <DependentUpon>empl_selc_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="err_dtst.xsc">
+      <DependentUpon>err_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="err_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>err_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="err_dtst.xss">
+      <DependentUpon>err_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Files_dtst.xsc">
+      <DependentUpon>Files_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Files_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Files_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Files_dtst.xss">
+      <DependentUpon>Files_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="fles_mng_dtst.xsc">
+      <DependentUpon>fles_mng_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="fles_mng_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fles_mng_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fles_mng_dtst.xss">
+      <DependentUpon>fles_mng_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="invoice_dataset.xsc">
+      <DependentUpon>invoice_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="invoice_dataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>invoice_dataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="invoice_dataset.xss">
+      <DependentUpon>invoice_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="journ_dtst.xsc">
+      <DependentUpon>journ_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="journ_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>journ_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="journ_dtst.xss">
+      <DependentUpon>journ_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="logstcs_dtst.xsc">
+      <DependentUpon>logstcs_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="logstcs_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logstcs_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logstcs_dtst.xss">
+      <DependentUpon>logstcs_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="logs_dtst.xsc">
+      <DependentUpon>logs_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="logs_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logs_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logs_dtst.xss">
+      <DependentUpon>logs_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="logs_prod2.xsc">
+      <DependentUpon>logs_prod2.xsd</DependentUpon>
+    </None>
+    <None Include="logs_prod2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logs_prod2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logs_prod2.xss">
+      <DependentUpon>logs_prod2.xsd</DependentUpon>
+    </None>
+    <None Include="logs_prod_dtst.xsc">
+      <DependentUpon>logs_prod_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="logs_prod_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logs_prod_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logs_prod_dtst.xss">
+      <DependentUpon>logs_prod_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Main_1_TemporaryKey.pfx" />
+    <None Include="Misc_DBDataSet.xsc">
+      <DependentUpon>Misc_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Misc_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Misc_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Misc_DBDataSet.xss">
+      <DependentUpon>Misc_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Misc_DBDataSet1.xsc">
+      <DependentUpon>Misc_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Misc_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Misc_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Misc_DBDataSet1.xss">
+      <DependentUpon>Misc_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Misc_DBDataSet2.xsc">
+      <DependentUpon>Misc_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Misc_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Misc_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Misc_DBDataSet2.xss">
+      <DependentUpon>Misc_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="outsrce_dtst.xsc">
+      <DependentUpon>outsrce_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="outsrce_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>outsrce_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="outsrce_dtst.xss">
+      <DependentUpon>outsrce_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="p2p_dtst.xsc">
+      <DependentUpon>p2p_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="p2p_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>p2p_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="p2p_dtst.xss">
+      <DependentUpon>p2p_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Peyed_dtst.xsc">
+      <DependentUpon>Peyed_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Peyed_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Peyed_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Peyed_dtst.xss">
+      <DependentUpon>Peyed_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="PO_invntry_dtst.xsc">
+      <DependentUpon>PO_invntry_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="PO_invntry_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PO_invntry_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PO_invntry_dtst.xss">
+      <DependentUpon>PO_invntry_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prjmgmt_dtst.xsc">
+      <DependentUpon>prjmgmt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prjmgmt_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prjmgmt_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prjmgmt_dtst.xss">
+      <DependentUpon>prjmgmt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prj_employees.xsc">
+      <DependentUpon>prj_employees.xsd</DependentUpon>
+    </None>
+    <None Include="prj_employees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prj_employees.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prj_employees.xss">
+      <DependentUpon>prj_employees.xsd</DependentUpon>
+    </None>
+    <None Include="prj_tasks_dtst.xsc">
+      <DependentUpon>prj_tasks_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prj_tasks_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prj_tasks_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prj_tasks_dtst.xss">
+      <DependentUpon>prj_tasks_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prob_logstc_dtst.xsc">
+      <DependentUpon>prob_logstc_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prob_logstc_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prob_logstc_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prob_logstc_dtst.xss">
+      <DependentUpon>prob_logstc_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prodmgmt_dtst.xsc">
+      <DependentUpon>prodmgmt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prodmgmt_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prodmgmt_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prodmgmt_dtst.xss">
+      <DependentUpon>prodmgmt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prod_bulk_dtst.xsc">
+      <DependentUpon>prod_bulk_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prod_bulk_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prod_bulk_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prod_bulk_dtst.xss">
+      <DependentUpon>prod_bulk_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prod_stock_dtst.xsc">
+      <DependentUpon>prod_stock_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prod_stock_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prod_stock_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prod_stock_dtst.xss">
+      <DependentUpon>prod_stock_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prod_typ_dtst.xsc">
+      <DependentUpon>prod_typ_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="prod_typ_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prod_typ_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prod_typ_dtst.xss">
+      <DependentUpon>prod_typ_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="PurchaseBook_dtst.xsc">
+      <DependentUpon>PurchaseBook_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseBook_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseBook_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseBook_dtst.xss">
+      <DependentUpon>PurchaseBook_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="purchase_ordr.xsc">
+      <DependentUpon>purchase_ordr.xsd</DependentUpon>
+    </None>
+    <None Include="purchase_ordr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>purchase_ordr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="purchase_ordr.xss">
+      <DependentUpon>purchase_ordr.xsd</DependentUpon>
+    </None>
+    <None Include="Purch_info_dtst.xsc">
+      <DependentUpon>Purch_info_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Purch_info_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Purch_info_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Purch_info_dtst.xss">
+      <DependentUpon>Purch_info_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DCboxntconv.png" />
+    <None Include="Resources\boxhovbrwseconv.png" />
+    <None Include="Resources\bussboxhov.png" />
+    <None Include="Resources\opctymedconv.png" />
+    <None Include="Resources\extboxconv.png" />
+    <None Include="Resources\backage2conv.png" />
+    <None Include="Resources\extbox2conv.png" />
+    <None Include="Resources\mylnkbox2conv.png" />
+    <None Include="Resources\officeboxnt2conv.png" />
+    <None Include="Resources\devboxnt2conv.png" />
+    <None Include="Resources\medtt22conv.png" />
+    <None Include="Resources\backagegreyconv.png" />
+    <None Include="Resources\mpboxnt2conv.png" />
+    <None Include="Resources\csboxnt2conv.png" />
+    <None Include="Resources\boxback2conv.png" />
+    <None Include="Resources\hmeboxconv2conv.png" />
+    <None Include="Resources\hmeboxconv2.png" />
+    <None Include="Resources\brwseboxnt2conv.png" />
+    <None Include="Resources\Doccboxnt2conv.png" />
+    <None Include="Resources\devtt2conv.png" />
+    <None Include="Resources\cstt22conv.png" />
+    <None Include="Resources\officett22conv.png" />
+    <None Include="Resources\mylnkboxconv.png" />
+    <None Include="Resources\backtls22conv.png" />
+    <None Include="Resources\rdycreconv.png" />
+    <None Include="Resources\opnboxnt2conv.png" />
+    <None Include="Resources\rdcreboxntconv.png" />
+    <None Include="Resources\IMG_1039.JPG" />
+    <None Include="Resources\desert.jpg" />
+    <None Include="Resources\Banner.bmp" />
+    <None Include="Resources\newdevmnu.png" />
+    <None Include="Resources\newoamnu.png" />
+    <None Include="Resources\bussboxnt2conv.png" />
+    <None Include="Resources\mpnewmnu.png" />
+    <None Include="Resources\csnewmnu.png" />
+    <None Include="Resources\csnew2mnu.png" />
+    <None Include="Resources\csnew4mnu.png" />
+    <None Include="Resources\csnew3mnu.png" />
+    <None Include="Resources\mponnew.png" />
+    <None Include="Resources\csonnew.png" />
+    <None Include="Resources\devonnew.png" />
+    <None Include="Resources\oaonnew.png" />
+    <None Include="Resources\banner2blue.bmp" />
+    <None Include="Resources\OAmnu.png" />
+    <None Include="Resources\CSmnu.png" />
+    <None Include="Resources\MPmnu.png" />
+    <None Include="Resources\EXT.png" />
+    <None Include="Resources\RES.png" />
+    <None Include="Resources\PRC.png" />
+    <None Include="Resources\MPbox.png" />
+    <None Include="Resources\CSbox.png" />
+    <None Include="Resources\DEVbox.png" />
+    <None Include="Resources\OAbox.png" />
+    <None Include="Resources\EXTbox.png" />
+    <None Include="Resources\HMEbox.png" />
+    <None Include="Resources\BRWSEbox.png" />
+    <None Include="Resources\DCbox.png" />
+    <None Include="Resources\BCbox.png" />
+    <None Include="Resources\DTbox.png" />
+    <None Include="Resources\LIBbox.png" />
+    <None Include="Resources\DEVtls.png" />
+    <None Include="Resources\MPtls.png" />
+    <None Include="Resources\CStls.png" />
+    <None Include="Resources\LIBtls.png" />
+    <None Include="Resources\exp.png" />
+    <None Include="Resources\expon.png" />
+    <None Include="Resources\clckbc.png" />
+    <None Include="Resources\cmpd.png" />
+    <None Include="Resources\cmpd.bmp" />
+    <None Include="Resources\devlop34.png" />
+    <None Include="Resources\chmpu.png" />
+    <None Include="Resources\nn.png" />
+    <None Include="Resources\OAtls.png" />
+    <None Include="Resources\mview.png" />
+    <None Include="Resources\BRW.png" />
+    <None Include="Resources\BUSStls.png" />
+    <None Include="Resources\DC.png" />
+    <None Include="Resources\BannerTRS.png" />
+    <None Include="Resources\champ.png" />
+    <None Include="Resources\OPNbox.png" />
+    <None Include="Resources\RDYbox.png" />
+    <None Include="Resources\MLbox.png" />
+    <None Include="Resources\NWbox.png" />
+    <None Include="Resources\MNUSbox3.png" />
+    <None Include="Resources\MNUSbox2.png" />
+    <None Include="Resources\MNUSbox.png" />
+    <None Include="Resources\MNUSboxon.png" />
+    <None Include="Resources\h.cur" />
+    <None Include="Resources\app.png" />
+    <None Include="Resources\ethrnt 2.png" />
+    <None Include="Resources\app on.png" />
+    <None Include="Resources\icns.png" />
+    <None Include="Resources\min.png" />
+    <None Include="Resources\bt37endx64.ico" />
+    <None Include="Resources\horizons1.bmp" />
+    <None Include="Resources\banner3blue.bmp" />
+    <None Include="Resources\cmpd2.bmp" />
+    <None Include="Resources\champ4.png" />
+    <None Include="Resources\newoa.png" />
+    <None Include="Resources\newdev.png" />
+    <None Include="Resources\csnew.png" />
+    <None Include="Resources\newdoc.png" />
+    <None Include="Resources\newmp.png" />
+    <None Include="Resources\bnnroptions.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\progress 0.png" />
+    <None Include="Resources\progress 1.png" />
+    <None Include="Resources\progress 2.png" />
+    <None Include="Resources\progress 3.png" />
+    <None Include="Resources\progress 4.png" />
+    <None Include="Resources\progress 5.png" />
+    <None Include="Resources\progress 6.png" />
+    <None Include="Resources\progress 7.png" />
+    <None Include="Resources\progress 8.png" />
+    <None Include="Resources\progress 9.png" />
+    <None Include="Resources\progress 10.png" />
+    <None Include="Resources\progress 11.png" />
+    <None Include="Resources\progress 12.png" />
+    <None Include="Resources\installback.png" />
+    <None Include="Resources\installicn.png" />
+    <None Include="Resources\banner2black.bmp" />
+    <None Include="Resources\indx.png" />
+    <None Include="Resources\hlppl.png" />
+    <None Include="Resources\fldrs.png" />
+    <None Include="Resources\ntwrk.png" />
+    <None Include="Resources\clc.png" />
+    <None Include="Resources\conv.png" />
+    <None Include="Resources\grph.png" />
+    <None Include="Resources\que.png" />
+    <None Include="Resources\phys.png" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\appsnfrms.png" />
+    <None Include="Resources\lgc.png" />
+    <None Include="Resources\OAmnuon.png" />
+    <None Include="Resources\DEVmnuon.png" />
+    <None Include="Resources\MPmnuon.png" />
+    <None Include="Resources\bugs.png" />
+    <None Include="Resources\CSmnuon.png" />
+    <None Include="Resources\PRCon.png" />
+    <None Include="Resources\EXTon.png" />
+    <None Include="Resources\RESon.png" />
+    <None Include="Resources\contextmnu.png" />
+    <None Include="Resources\flakemnu.png" />
+    <None Include="Resources\flakemnuon.png" />
+    <None Include="Resources\backarr.png" />
+    <None Include="Resources\frontarr.png" />
+    <None Include="Resources\btsimp1.png" />
+    <None Include="Resources\buttoninstall.png" />
+    <None Include="Resources\buttoninstallon.png" />
+    <None Include="Resources\coomunicate.png" />
+    <None Include="Resources\AM.PNG" />
+    <None Include="Resources\EXTdwn.png" />
+    <None Include="Resources\DEVmnudwn.png" />
+    <None Include="Resources\OAmnudwn.png" />
+    <None Include="Resources\MPmnudwn.png" />
+    <None Include="Resources\CSmnudwn.png" />
+    <None Include="Resources\PRCdwn.png" />
+    <None Include="Resources\RESdwn.png" />
+    <None Include="Resources\controlsbck.png" />
+    <None Include="Resources\lguspls.png" />
+    <None Include="Resources\amdsicn.png" />
+    <None Include="Resources\AS ntext.png" />
+    <None Include="Resources\Pgegmg.png" />
+    <None Include="Resources\Pgepl.png" />
+    <None Include="Resources\pfbckco.png" />
+    <None Include="Resources\flsepf.png" />
+    <None Include="Resources\morevw.cur.png" />
+    <None Include="Resources\Pgegmg1.png" />
+    <None Include="Resources\colos.png" />
+    <None Include="Resources\bills.png" />
+    <None Include="Resources\amdb.png" />
+    <None Include="Resources\black.png" />
+    <None Include="Resources\blue.png" />
+    <None Include="Resources\green.png" />
+    <None Include="Resources\grey.png" />
+    <None Include="Resources\red.png" />
+    <None Include="Resources\bannerxmcuty.png" />
+    <None Include="Resources\mnu.png" />
+    <None Include="Resources\icon use onlyx33blue.png" />
+    <None Include="Resources\icon use only.png" />
+    <None Include="Resources\devlop341.png" />
+    <None Include="Resources\oa21.png" />
+    <None Include="Resources\devlop33.png" />
+    <None Include="Resources\app1.png" />
+    <None Include="Resources\fle.png" />
+    <None Include="Resources\Iwrite.png" />
+    <None Include="Resources\dtafrm.png" />
+    <None Include="Resources\network.png" />
+    <None Include="Resources\morevw1.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\PWof.png" />
+    <None Include="Resources\PWon.png" />
+    <None Include="Resources\mgmtnew.png" />
+    <None Include="Resources\busnewbx.png" />
+    <None Include="Resources\docentnew.png" />
+    <None Include="Resources\amdsicnico.ico" />
+    <None Include="Resources\bills1.png" />
+    <None Include="Resources\amdsback.png" />
+    <None Include="Resources\dtafrmdwn.png" />
+    <None Include="Resources\dtafrmon.png" />
+    <None Include="Resources\Iwritedwn.png" />
+    <None Include="Resources\Iwriteon.png" />
+    <None Include="Resources\accstd.png" />
+    <None Include="Resources\acc.png" />
+    <None Include="Resources\journ.png" />
+    <None Include="Resources\ledger.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\pandr.png" />
+    <None Include="Resources\hr.png" />
+    <None Include="Resources\oprtns.png" />
+    <None Include="Resources\pr.png" />
+    <None Include="Resources\mdls.png" />
+    <None Include="Resources\com.png" />
+    <None Include="Resources\books.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\bookdwn.png" />
+    <None Include="Resources\bookclc.png" />
+    <None Include="Resources\finalize.png" />
+    <None Include="Resources\pageon.png" />
+    <None Include="Resources\pagedwn.png" />
+    <None Include="Resources\finalizedwn.png" />
+    <None Include="Resources\finalizeon.png" />
+    <None Include="Resources\btnothersde.png" />
+    <None Include="Resources\btnothersdeon.png" />
+    <None Include="Resources\booksdwn.png" />
+    <None Include="Resources\bookson.png" />
+    <None Include="Resources\installericon.ico" />
+    <None Include="Resources\gung.png" />
+    <None Include="Resources\icnlv.png" />
+    <None Include="Resources\gooo.png" />
+    <None Include="Resources\nm.png" />
+    <None Include="Resources\icnlv2.png" />
+    <None Include="Resources\max.png" />
+    <None Include="Resources\max1.png" />
+    <None Include="Resources\minmze.png" />
+    <None Include="Resources\minmze1.png" />
+    <None Include="Resources\colb.png" />
+    <None Include="Resources\grn.png" />
+    <None Include="Resources\chkin.png" />
+    <None Include="Resources\lte.png" />
+    <None Include="Resources\cmmnt.png" />
+    <None Include="Resources\bck.png" />
+    <None Include="Resources\fnt.png" />
+    <None Include="Resources\bckdwn.png" />
+    <None Include="Resources\bckon.png" />
+    <None Include="Resources\fntdwn.png" />
+    <None Include="Resources\fnton.png" />
+    <None Include="Resources\bckk.png" />
+    <None Include="Resources\bckk1.png" />
+    <Content Include="Amdtbse_6.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BSAM.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="installicn.ico" />
+    <None Include="Resources\Acap.bmp" />
+    <None Include="Resources\Acaptrans.bmp" />
+    <None Include="Resources\Accounts.png" />
+    <None Include="Resources\aer.bmp" />
+    <None Include="Resources\alarm.bmp" />
+    <None Include="Resources\Anocap.bmp" />
+    <None Include="Resources\Apps1.png" />
+    <None Include="Resources\Apps1trans.png" />
+    <None Include="Resources\backcol.bmp" />
+    <None Include="Resources\backimg.bmp" />
+    <None Include="Resources\balshit.png" />
+    <None Include="Resources\book.bmp" />
+    <None Include="Resources\bugsy.bmp" />
+    <None Include="Resources\Calculatro.bmp" />
+    <None Include="Resources\Calculatrotype.bmp" />
+    <None Include="Resources\calendar.bmp" />
+    <None Include="Resources\calendaropt.bmp" />
+    <None Include="Resources\connct.bmp" />
+    <None Include="Resources\connctno.bmp" />
+    <None Include="Resources\Console.bmp" />
+    <None Include="Resources\contents.bmp" />
+    <None Include="Resources\conv.bmp" />
+    <None Include="Resources\defaulttrolley.bmp" />
+    <None Include="Resources\delfold.png" />
+    <None Include="Resources\devlopersm.bmp" />
+    <None Include="Resources\Diagnostics.bmp" />
+    <None Include="Resources\Dictionary.bmp" />
+    <None Include="Resources\down.bmp" />
+    <None Include="Resources\draw.bmp" />
+    <None Include="Resources\edit.bmp" />
+    <None Include="Resources\ex.bmp" />
+    <None Include="Resources\extrns.bmp" />
+    <None Include="Resources\file1.png" />
+    <None Include="Resources\file1acc.png" />
+    <None Include="Resources\file1devlop.bmp" />
+    <None Include="Resources\file1trans.png" />
+    <None Include="Resources\file1wb.png" />
+    <None Include="Resources\flder.png" />
+    <None Include="Resources\fle.bmp" />
+    <None Include="Resources\flenw.bmp" />
+    <None Include="Resources\fleopn.bmp" />
+    <None Include="Resources\go.bmp" />
+    <None Include="Resources\grids.bmp" />
+    <None Include="Resources\history.bmp" />
+    <None Include="Resources\hlp.bmp" />
+    <None Include="Resources\hme.bmp" />
+    <None Include="Resources\hme2.bmp" />
+    <None Include="Resources\horizons.bmp" />
+    <None Include="Resources\Icnbg1.png" />
+    <None Include="Resources\Icns1.png" />
+    <None Include="Resources\Icnsm1.png" />
+    <None Include="Resources\imglayout.bmp" />
+    <None Include="Resources\imglayouttrnsprt.bmp" />
+    <None Include="Resources\impupdn.bmp" />
+    <None Include="Resources\impupdnno.bmp" />
+    <None Include="Resources\index.bmp" />
+    <None Include="Resources\information.bmp" />
+    <None Include="Resources\informationvw.bmp" />
+    <None Include="Resources\intereface.bmp" />
+    <None Include="Resources\less.bmp" />
+    <None Include="Resources\lesstrans.bmp" />
+    <None Include="Resources\llib.bmp" />
+    <None Include="Resources\main.png" />
+    <None Include="Resources\mediaguide.bmp" />
+    <None Include="Resources\minview.png" />
+    <None Include="Resources\more.bmp" />
+    <None Include="Resources\moretrans.bmp" />
+    <None Include="Resources\my lib.bmp" />
+    <None Include="Resources\network.bmp" />
+    <None Include="Resources\newfolder.bmp" />
+    <None Include="Resources\newjourn.bmp" />
+    <None Include="Resources\newjournno.bmp" />
+    <None Include="Resources\notepd.bmp" />
+    <None Include="Resources\nwoff.bmp" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Openacc.bmp" />
+    <None Include="Resources\Opendbm.bmp" />
+    <None Include="Resources\Opendevlop.bmp" />
+    <None Include="Resources\openjourn.bmp" />
+    <None Include="Resources\openjournno.bmp" />
+    <None Include="Resources\Opentrans.png" />
+    <None Include="Resources\opnoff.bmp" />
+    <None Include="Resources\ordr.bmp" />
+    <None Include="Resources\Paste.bmp" />
+    <None Include="Resources\piclib.bmp" />
+    <None Include="Resources\play.bmp" />
+    <None Include="Resources\prev.bmp" />
+    <None Include="Resources\Print.bmp" />
+    <None Include="Resources\Printnoshad.bmp" />
+    <None Include="Resources\processesapp.bmp" />
+    <None Include="Resources\processesappother.bmp" />
+    <None Include="Resources\rdycre1.png" />
+    <None Include="Resources\Recent.bmp" />
+    <None Include="Resources\refrsh.bmp" />
+    <None Include="Resources\report.bmp" />
+    <None Include="Resources\restart.bmp" />
+    <None Include="Resources\restarttrans.bmp" />
+    <None Include="Resources\rotat.bmp" />
+    <None Include="Resources\rotat180180.bmp" />
+    <None Include="Resources\rtol.bmp" />
+    <None Include="Resources\rtoltrans.bmp" />
+    <None Include="Resources\Save1.png" />
+    <None Include="Resources\Save1acc.png" />
+    <None Include="Resources\Save1devlop.bmp" />
+    <None Include="Resources\Save1trans.png" />
+    <None Include="Resources\savejourn.bmp" />
+    <None Include="Resources\savejournno.bmp" />
+    <None Include="Resources\Saveoa.png" />
+    <None Include="Resources\scrsnp.png" />
+    <None Include="Resources\search lib.bmp" />
+    <None Include="Resources\search.bmp" />
+    <None Include="Resources\searchaccbsc.bmp" />
+    <None Include="Resources\searchbsc.bmp" />
+    <None Include="Resources\searchoabsc.bmp" />
+    <None Include="Resources\Dictionaryno.bmp" />
+    <None Include="Resources\bttj2.png" />
+    <None Include="Resources\conncting.bmp" />
+    <None Include="Resources\conncted.bmp" />
+    <None Include="Resources\conncerr.bmp" />
+    <None Include="Resources\mnu1.png" />
+    <None Include="Resources\betatechcut1.png" />
+    <None Include="Resources\betatechcut2.png" />
+    <None Include="Resources\datcommds.png" />
+    <None Include="Resources\dbtse.png" />
+    <None Include="Resources\mod.png" />
+    <None Include="Resources\reszwin.bmp" />
+    <None Include="Resources\downst.bmp" />
+    <None Include="Resources\clck.png" />
+    <None Include="Resources\pntpic2.png" />
+    <None Include="Resources\jrn1.png" />
+    <None Include="Resources\ledg1.png" />
+    <None Include="Resources\invc1.png" />
+    <None Include="Resources\accnt1.png" />
+    <None Include="Resources\cust1.png" />
+    <None Include="Resources\bckacc.png" />
+    <None Include="Resources\bckonacc.png" />
+    <None Include="Resources\playst.bmp" />
+    <None Include="Resources\rew.bmp" />
+    <None Include="Resources\rewst.bmp" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\copy.bmp" />
+    <None Include="Resources\equal.png" />
+    <None Include="Resources\notequal.png" />
+    <None Include="Resources\greater.bmp" />
+    <None Include="Resources\devlop35no.ico" />
+    <None Include="Resources\fle36.ico" />
+    <None Include="Resources\ama.png" />
+    <None Include="Resources\dingbat.png" />
+    <None Include="Resources\backrnddim.png" />
+    <None Include="Resources\mediaguidetr.bmp" />
+    <None Include="Resources\mylibtr.bmp" />
+    <None Include="Resources\dbs_App.png" />
+    <None Include="Resources\Acc_App_shd.png" />
+    <None Include="Resources\Acc_App.png" />
+    <None Include="Resources\main_Mnu.png" />
+    <None Include="Resources\bus_App.bmp" />
+    <None Include="Resources\mgmt_App.bmp" />
+    <None Include="Resources\fle_App.bmp" />
+    <None Include="Resources\banntransp2.png" />
+    <None Include="Resources\lckk.bmp" />
+    <None Include="Resources\ex_am.bmp" />
+    <None Include="Resources\rn34.png" />
+    <None Include="Resources\freq.bmp" />
+    <None Include="Resources\bus_App_white1.bmp" />
+    <None Include="Resources\dbs_App_white.png" />
+    <None Include="Resources\file1trans_wht.bmp" />
+    <None Include="Resources\bus_App_white.bmp" />
+    <None Include="Resources\mylibtr_wht.bmp" />
+    <None Include="Resources\Acc_App_wht.bmp" />
+    <None Include="Resources\mgmt_App_shd.bmp" />
+    <None Include="Resources\Apps1trans_wht.bmp" />
+    <None Include="Resources\lckk_wht.bmp" />
+    <None Include="Resources\ex_am_wht.bmp" />
+    <None Include="Resources\mediaguidetr_wht.bmp" />
+    <None Include="Resources\fle_App_wht.bmp" />
+    <None Include="Resources\main_Mnu_wht.bmp" />
+    <None Include="Resources\freq_wht.bmp" />
+    <None Include="Resources\hlp_wht.bmp" />
+    <None Include="Resources\searchbsc_wht.bmp" />
+    <None Include="Resources\conncting_wht.bmp" />
+    <None Include="Resources\conncted_wht.bmp" />
+    <None Include="Resources\connct_wht.bmp" />
+    <None Include="Resources\connctno_wht.bmp" />
+    <None Include="Resources\box2.png" />
+    <None Include="Resources\fntt.png" />
+    <None Include="Resources\exp3.png" />
+    <None Include="Resources\gooo2.png" />
+    <None Include="Resources\box21.png" />
+    <None Include="Resources\box22.png" />
+    <None Include="Resources\filetype_doc.png" />
+    <None Include="Resources\filetype_music.png" />
+    <None Include="Resources\filetype_image.png" />
+    <None Include="Resources\filetype_db.png" />
+    <None Include="Resources\filetype_mov.png" />
+    <None Include="Resources\file_link.png" />
+    <None Include="Resources\filetype_html.png" />
+    <None Include="Resources\filetype_exe.png" />
+    <None Include="Resources\err_r.bmp" />
+    <None Include="Resources\go2.bmp" />
+    <None Include="Resources\rdio_btn.bmp" />
+    <None Include="Resources\flippy_tr.bmp" />
+    <None Include="Resources\extfin.png" />
+    <None Include="Resources\line.bmp" />
+    <None Include="Resources\label.bmp" />
+    <None Include="Resources\pict.bmp" />
+    <None Include="Resources\notes.png" />
+    <None Include="Resources\nts_2.png" />
+    <None Include="Resources\Graphing.bmp" />
+    <None Include="Resources\market.png" />
+    <None Include="Resources\projct.png" />
+    <None Include="Resources\humrec.png" />
+    <None Include="Resources\oper.png" />
+    <None Include="Resources\employ.png" />
+    <None Include="Resources\person.png" />
+    <None Include="Resources\contct.png" />
+    <None Include="Resources\contct_transp.png" />
+    <Content Include="Misc_DB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\customr.png" />
+    <None Include="Resources\connct_nfo.bmp" />
+    <None Include="Resources\nw_rw.bmp" />
+    <None Include="Resources\+-.bmp" />
+    <None Include="Resources\search_loc.bmp" />
+    <None Include="Resources\installicngrn.png" />
+    <None Include="Resources\binder.png" />
+    <None Include="Resources\produs.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\conicle21.png" />
+    <None Include="Resources\nw_page.bmp" />
+    <None Include="Resources\page.bmp" />
+    <None Include="Resources\br_cde.png" />
+    <None Include="Resources\chkbox.bmp" />
+    <None Include="Resources\dgv.bmp" />
+    <None Include="Resources\dtp.bmp" />
+    <None Include="Resources\cone.png" />
+    <None Include="Resources\envelpe.bmp" />
+    <None Include="Resources\network1.png" />
+    <None Include="Resources\Graphing_style.bmp" />
+    <None Include="Resources\Pge email.png" />
+    <None Include="Resources\envelpe_transp.bmp" />
+    <None Include="Resources\alarm_tr.bmp" />
+    <None Include="Resources\calendaropt_tr.bmp" />
+    <None Include="Resources\Anocaptrans.bmp" />
+    <None Include="Resources\dispofrontall.png" />
+    <None Include="Resources\dispobackall.png" />
+    <None Include="Resources\cashier.bmp" />
+    <None Include="Resources\bannrrageconvh.png" />
+    <None Include="Resources\deskfrnt.png" />
+    <None Include="Resources\coomunicate1.png" />
+    <None Include="Resources\docs.png" />
+    <None Include="Resources\beta.png" />
+    <None Include="Resources\crses.png" />
+    <None Include="Resources\envelpe-sent.bmp" />
+    <None Include="Resources\ass.png" />
+    <None Include="Resources\docy.png" />
+    <None Include="Resources\lickydicky.png" />
+    <None Include="Resources\fnt1.png" />
+    <None Include="Resources\1.PNG" />
+    <None Include="Resources\2.PNG" />
+    <None Include="Resources\Attndence.png" />
+    <None Include="Resources\Attndence1.png" />
+    <None Include="Resources\deskfrnt1.png" />
+    <None Include="Resources\Reporting.png" />
+    <None Include="Resources\fle_prp.bmp" />
+    <None Include="Resources\bttj.png" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\graphs.png" />
+    <None Include="Resources\main_Mnu_Thumb.png" />
+    <None Include="Resources\1_1.png" />
+    <None Include="Resources\bckaccdwn.png" />
+    <None Include="Resources\Attndenceon.png" />
+    <None Include="Resources\graphson.png" />
+    <None Include="Resources\Reportingon.png" />
+    <None Include="Resources\Reportingdwn.png" />
+    <None Include="Resources\Attndencedwn.png" />
+    <None Include="Resources\graphsdwn.png" />
+    <None Include="Resources\operdwn.png" />
+    <None Include="Resources\operon.png" />
+    <None Include="Resources\projctdwn.png" />
+    <None Include="Resources\projcton.png" />
+    <None Include="Resources\humrecdwn.png" />
+    <None Include="Resources\humrecon.png" />
+    <None Include="Resources\employdwn.png" />
+    <None Include="Resources\employon.png" />
+    <None Include="Resources\produsdwn.png" />
+    <None Include="Resources\produson.png" />
+    <None Include="Resources\crsesdwn.png" />
+    <None Include="Resources\crseson.png" />
+    <None Include="Resources\invc1dwn.png" />
+    <None Include="Resources\invc1on.png" />
+    <None Include="Resources\jrn1dwn.png" />
+    <None Include="Resources\jrn1on.png" />
+    <None Include="Resources\ledg1dwn.png" />
+    <None Include="Resources\ledg1on.png" />
+    <None Include="Resources\Acc_App_thmb.png" />
+    <None Include="Resources\bus_App_thmb.bmp" />
+    <None Include="Resources\fle_App_thumb.bmp" />
+    <None Include="Resources\mgmt_App_thumb.bmp" />
+    <None Include="Resources\dbs_App_THUMB.png" />
+    <None Include="Resources\CentralizedObj.bmp" />
+    <None Include="Resources\DentralizedObj.bmp" />
+    <None Include="Resources\Emplycemuswashhans.bmp" />
+    <None Include="Resources\C_list.bmp" />
+    <None Include="Resources\down_arrowmnu.bmp" />
+    <None Include="Resources\refrsh_trns.bmp" />
+    <None Include="Resources\DEVmnu.png" />
+    <None Include="Resources\colb1.png" />
+    <None Include="Resources\lves.png" />
+    <None Include="Resources\gplv3-127x51.png" />
+    <None Include="Resources\graphing.png" />
+    <None Include="Resources\graphing_pie.png" />
+    <None Include="Resources\EMPIN.png" />
+    <None Include="Resources\minimizapp.png" />
+    <None Include="Resources\Notifications.png" />
+    <None Include="Resources\ASL Marking.png" />
+    <Content Include="Resources\Secs.sln" />
+    <None Include="Resources\Share1.png" />
+    <None Include="Resources\strtdbtse.bmp" />
+    <None Include="Resources\shadowdwn.png" />
+    <None Include="Resources\tabs.png" />
+    <None Include="Resources\textbox.bmp" />
+    <None Include="Resources\shadow - Copy - Copy.png" />
+    <None Include="Resources\shadow - Copy.png" />
+    <None Include="Resources\wizrd.bmp" />
+    <None Include="Resources\tools_trsp.bmp" />
+    <None Include="Resources\shld_trn.png" />
+    <None Include="Resources\transport2.png" />
+    <None Include="Resources\shld_trn_2.bmp" />
+    <None Include="Resources\style.bmp" />
+    <None Include="Resources\style_pge.bmp" />
+    <None Include="Resources\text_styles.bmp" />
+    <None Include="Resources\text_styles_1col.bmp" />
+    <None Include="Resources\text_styles_2col.bmp" />
+    <None Include="Resources\text_styles_3col.bmp" />
+    <None Include="Resources\text_styles_4col.bmp" />
+    <None Include="Resources\text_styles_letter.bmp" />
+    <None Include="Resources\uppar.png" />
+    <None Include="Resources\wins.bmp" />
+    <None Include="Resources\sll_trns.bmp" />
+    <None Include="Resources\vvvm.bmp" />
+    <None Include="Resources\shp_App_thumb.bmp" />
+    <None Include="Resources\_2.png" />
+    <None Include="Resources\SETTmnu.png" />
+    <None Include="Resources\SO.png" />
+    <None Include="Resources\SHPmnu.png" />
+    <Content Include="Sec_AM.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UCB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\seperator1.png" />
+    <None Include="Resources\wizwin.bmp" />
+    <None Include="Resources\video1.png" />
+    <None Include="Resources\seperator.png" />
+    <None Include="Resources\vw_wht.bmp" />
+    <None Include="Resources\shp_App_white1.bmp" />
+    <None Include="Resources\shp_App_white.bmp" />
+    <None Include="Resources\shld.png" />
+    <None Include="Resources\wlcmeconv1.png" />
+    <None Include="Resources\wlcmeblcl1.png" />
+    <None Include="Resources\wlcme21.png" />
+    <None Include="Resources\windw1.png" />
+    <None Include="Resources\win app11.png" />
+    <None Include="Resources\win 32 bns22.png" />
+    <None Include="Resources\win wmc11.png" />
+    <None Include="Resources\win app21.png" />
+    <None Include="Resources\w321.png" />
+    <None Include="Resources\view1632-21.png" />
+    <None Include="Resources\view16321.png" />
+    <None Include="Resources\transpo sve3.png" />
+    <None Include="Resources\Win11.png" />
+    <None Include="Resources\transpo sve21.png" />
+    <None Include="Resources\transport1.png" />
+    <None Include="Resources\transpo opn21.png" />
+    <None Include="Resources\transpo +21.png" />
+    <None Include="Resources\transpo sve1.png" />
+    <None Include="Resources\transpo rn21.png" />
+    <None Include="Resources\transpo rn1.png" />
+    <None Include="Resources\transpo opn1.png" />
+    <None Include="Resources\transpo fle1.png" />
+    <None Include="Resources\Transpo File green1.png" />
+    <None Include="Resources\Transpo File blue1.png" />
+    <None Include="Resources\transpo corrected opn1.png" />
+    <None Include="Resources\tbsdeonon1.png" />
+    <None Include="Resources\tbsdeon1.png" />
+    <None Include="Resources\tbnormon1.png" />
+    <None Include="Resources\tbesde1.png" />
+    <None Include="Resources\tbeothersdedwn1.png" />
+    <None Include="Resources\syshovpre1.png" />
+    <None Include="Resources\sveboxnt2conv1.png" />
+    <None Include="Resources\sveboxnt21.png" />
+    <None Include="Resources\summbtn1.png" />
+    <None Include="Resources\shp_App.bmp" />
+    <None Include="Resources\vw.bmp" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\trans1.png" />
+    <None Include="Resources\upst.bmp" />
+    <None Include="Resources\shadow.png" />
+    <None Include="Resources\Win1.png" />
+    <None Include="Resources\vwjrn.bmp" />
+    <None Include="Resources\voiceaid.bmp" />
+    <None Include="Resources\views.bmp" />
+    <None Include="Resources\up.bmp" />
+    <None Include="Resources\tutorial2.bmp" />
+    <None Include="Resources\tutorial.bmp" />
+    <None Include="Resources\trolley.bmp" />
+    <None Include="Resources\touch.bmp" />
+    <None Include="Resources\topmost.bmp" />
+    <None Include="Resources\tools.bmp" />
+    <None Include="Resources\Toolb1.png" />
+    <None Include="Resources\tick.bmp" />
+    <None Include="Resources\three balls.bmp" />
+    <None Include="Resources\ss.bmp" />
+    <None Include="Resources\srcdta2.bmp" />
+    <None Include="Resources\srcdta.bmp" />
+    <None Include="Resources\srcdevlopbsc.bmp" />
+    <None Include="Resources\srcdevlop.bmp" />
+    <None Include="Resources\sll.bmp" />
+    <None Include="Resources\simulatr.bmp" />
+    <None Include="Resources\shp.bmp" />
+    <None Include="Resources\show.bmp" />
+    <None Include="Resources\selitm.png" />
+    <None Include="Resources\SelectAlltrans.bmp" />
+    <None Include="Resources\SelectAll.bmp" />
+    <None Include="Resources\selctimg.bmp" />
+    <None Include="Resources\summbtnon.png" />
+    <None Include="Resources\summbtndwn.png" />
+    <None Include="Resources\splitbtnon.png" />
+    <None Include="Resources\splitbtndwn.png" />
+    <None Include="Resources\tbsdeon.png" />
+    <None Include="Resources\tbevwson.png" />
+    <None Include="Resources\tbevwsdwn.png" />
+    <None Include="Resources\tbevws.png" />
+    <None Include="Resources\summbtn.png" />
+    <None Include="Resources\splitbtn.png" />
+    <None Include="Resources\tbsdeonon.png" />
+    <None Include="Resources\tbenorm.png" />
+    <None Include="Resources\tbnormon.png" />
+    <None Include="Resources\tbemidon.png" />
+    <None Include="Resources\tbenormselctd.png" />
+    <None Include="Resources\tbeslteon.png" />
+    <None Include="Resources\wlcmescrn.png" />
+    <None Include="Resources\trray.png" />
+    <None Include="Resources\tbeothersdedwn.png" />
+    <None Include="Resources\tbenormdwn.png" />
+    <None Include="Resources\Sharedwn.png" />
+    <None Include="Resources\Shareon.png" />
+    <None Include="Resources\Share.png" />
+    <None Include="Resources\tbesde.png" />
+    <None Include="Resources\transport.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\tlls.png" />
+    <None Include="Resources\ss.png" />
+    <None Include="Resources\vvm.png" />
+    <None Include="Resources\vvm5.png" />
+    <None Include="Resources\vvm4.png" />
+    <None Include="Resources\vvm3.png" />
+    <None Include="Resources\vvm2.png" />
+    <None Include="Resources\yellow.png" />
+    <None Include="Resources\white.png" />
+    <None Include="Resources\SOon.png" />
+    <None Include="Resources\SOdn.png" />
+    <None Include="Resources\SOso.png" />
+    <None Include="Resources\windw.png" />
+    <None Include="Resources\SIDownload.png" />
+    <None Include="Resources\SI_Sign2.png" />
+    <None Include="Resources\SIDevelop.png" />
+    <None Include="Resources\SI Sign2.png" />
+    <None Include="Resources\win 32 bns2.png" />
+    <None Include="Resources\win app2.png" />
+    <None Include="Resources\win wmc1.png" />
+    <None Include="Resources\SETTmnudwn.png" />
+    <None Include="Resources\SHPmnudwn.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Untitled %282%29.wma" />
+    <None Include="Resources\SHPmnuon.png" />
+    <None Include="Resources\SETTmnuon.png" />
+    <None Include="Resources\sttng.png" />
+    <None Include="Resources\win app1.png" />
+    <None Include="Resources\unkn.png" />
+    <None Include="Resources\tutor.png" />
+    <None Include="Resources\src.png" />
+    <None Include="Resources\Sign up.htm" />
+    <None Include="Resources\sss.png" />
+    <None Include="Resources\SVEbox.png" />
+    <None Include="Resources\shpp.png" />
+    <None Include="Resources\SOtls.png" />
+    <None Include="Resources\SHPtls.png" />
+    <None Include="Resources\Settingsnw.png" />
+    <None Include="Resources\SObox.png" />
+    <None Include="Resources\SHPbox.png" />
+    <None Include="Resources\SETTbox.png" />
+    <None Include="Resources\sw.png" />
+    <None Include="Resources\shponnew.png" />
+    <None Include="Resources\stnonnew.png" />
+    <None Include="Resources\sveboxnt2.png" />
+    <None Include="Resources\spenewmnu.png" />
+    <None Include="Resources\sveboxnt2conv.png" />
+    <None Include="Resources\speboxnt2conv.png" />
+    <None Include="Resources\spett22conv.png" />
+    <None Include="Resources\settt22conv.png" />
+    <None Include="Resources\soboxnt2conv.png" />
+    <None Include="Resources\tmebox2conv.png" />
+    <None Include="Resources\tmeboxconv.png" />
+    <None Include="Resources\settingsimgconv.png" />
+    <None Include="Resources\wlcmeconv.png" />
+    <None Include="Resources\winszeconv.png" />
+    <None Include="Resources\winsze.png" />
+    <None Include="Resources\SOboxhoverconv.png" />
+    <None Include="Resources\playboxconv.png" />
+    <None Include="Resources\hmeboxconv.png" />
+    <None Include="Resources\brwseboxntconv.png" />
+    <None Include="Resources\soboxntconv.png" />
+    <None Include="Resources\bussboxntconv.png" />
+    <None Include="Resources\bussboxnt.png" />
+    <None Include="Resources\Doccboxntconv.png" />
+    <None Include="Resources\csboxntconv.png" />
+    <None Include="Resources\mpboxntconv.png" />
+    <None Include="Resources\speboxntconv.png" />
+    <None Include="Resources\devboxntconv.png" />
+    <None Include="Resources\officeboxntconv.png" />
+    <None Include="Resources\sppeoffonconv.png" />
+    <None Include="Resources\devoffonconv.png" />
+    <None Include="Resources\CSoffonconv.png" />
+    <None Include="Resources\offoffonconv.png" />
+    <None Include="Resources\playoffonconv.png" />
+    <None Include="Resources\sppeoff.png" />
+    <None Include="Resources\devoff.png" />
+    <None Include="Resources\CSoff.png" />
+    <None Include="Resources\offoff.png" />
+    <None Include="Resources\playoff.png" />
+    <None Include="Resources\settingsglare.png" />
+    <None Include="Resources\Settingsnwcon.png" />
+    <None Include="Resources\Settingsnwoncomc.png" />
+    <None Include="Resources\csmnunewonconv.png" />
+    <None Include="Resources\CSnewmnonconv.png" />
+    <None Include="Resources\offmnunewonconv.png" />
+    <None Include="Resources\shpnewmnconv.png" />
+    <None Include="Resources\offmnunewconv.png" />
+    <None Include="Resources\devmnunewconv.png" />
+    <None Include="Resources\CSnewmnconv.png" />
+    <None Include="Resources\devmnunewonconv.png" />
+    <None Include="Resources\playrecordsnewonconv.png" />
+    <None Include="Resources\playrecordsnewconv.png" />
+    <None Include="Resources\brdrfll.png" />
+    <None Include="Resources\brdrgng.png" />
+    <None Include="Resources\brdrmnu.png" />
+    <None Include="Resources\wave.png" />
+    <None Include="Resources\minview1.png" />
+    <None Include="Resources\highvw.png" />
+    <None Include="Resources\morevw.png" />
+    <None Include="Resources\opctylt.png" />
+    <None Include="Resources\opctyhvy.png" />
+    <None Include="Resources\opctymnu.png" />
+    <None Include="Resources\icnbig.png" />
+    <None Include="Resources\icnsm.png" />
+    <None Include="Resources\viewmnu.png" />
+    <None Include="Resources\hlp1.png" />
+    <None Include="Resources\hlp.png" />
+    <None Include="Resources\backtabbluespec.png" />
+    <None Include="Resources\backageconv.png" />
+    <None Include="Resources\bannrrageconv.png" />
+    <None Include="Resources\boxutility.png" />
+    <None Include="Resources\backtab2.png" />
+    <None Include="Resources\devlop2.png" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\wlcmeblcl.png" />
+    <None Include="Resources\wlcme2.png" />
+    <None Include="Resources\win wmc.png" />
+    <None Include="Resources\win app.png" />
+    <None Include="Resources\win 34.png" />
+    <None Include="Resources\win 33.png" />
+    <None Include="Resources\win 32.png" />
+    <None Include="Resources\win 32 basic.png" />
+    <None Include="Resources\w32.png" />
+    <None Include="Resources\view1632.png" />
+    <None Include="Resources\view1632-2.png" />
+    <None Include="Resources\video.png" />
+    <None Include="Resources\vcecnt.png" />
+    <None Include="Resources\vbjvjhvhj.png" />
+    <None Include="Resources\vbjvjhvhj2.png" />
+    <None Include="Resources\vater shiterenh.png" />
+    <None Include="Resources\vater shiter.png" />
+    <None Include="Resources\transpo window format, open.png" />
+    <None Include="Resources\transpo window format, file.png" />
+    <None Include="Resources\transpo sve.png" />
+    <None Include="Resources\transpo sve2.png" />
+    <None Include="Resources\transpo rn.png" />
+    <None Include="Resources\transpo rn2.png" />
+    <None Include="Resources\transpo opn.png" />
+    <None Include="Resources\transpo opn2.png" />
+    <None Include="Resources\transpo fle.png" />
+    <None Include="Resources\transpo fle2.png" />
+    <None Include="Resources\Transpo File green.png" />
+    <None Include="Resources\Transpo File blue.png" />
+    <None Include="Resources\transpo corrected opn.png" />
+    <None Include="Resources\transpo +.png" />
+    <None Include="Resources\transpo +2.png" />
+    <None Include="Resources\touch mnu.png" />
+    <None Include="Resources\tm.png" />
+    <None Include="Resources\tm on.png" />
+    <None Include="Resources\syshovpre.png" />
+    <None Include="Resources\SVE green.png" />
+    <None Include="Resources\sve34.png" />
+    <None Include="Resources\spett.png" />
+    <None Include="Resources\spehovpre.png" />
+    <None Include="Resources\Softwaresys.png" />
+    <None Include="Resources\shppeon.png" />
+    <None Include="Resources\shppe.png" />
+    <None Include="Resources\Shppe img 1.png" />
+    <None Include="Resources\shno.png" />
+    <None Include="Resources\settt.png" />
+    <None Include="Resources\settt2.png" />
+    <None Include="Resources\scroller img.png" />
+    <None Include="Resources\scroller img repaired.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save33tb.png" />
+    <None Include="Resources\save33.png" />
+    <None Include="Resources\run.png" />
+    <None Include="Resources\rn33.png" />
+    <None Include="Resources\restrtfinal.png" />
+    <None Include="Resources\recharge.png" />
+    <None Include="Resources\recharge turq.png" />
+    <None Include="Resources\recharge sm.png" />
+    <None Include="Resources\recharge 2.png" />
+    <None Include="Resources\re.png" />
+    <None Include="Resources\ram.png" />
+    <None Include="Resources\proccess.png" />
+    <None Include="Resources\pmon.png" />
+    <None Include="Resources\pmfin.png" />
+    <None Include="Resources\pm.png" />
+    <None Include="Resources\plus on.png" />
+    <None Include="Resources\plus off.png" />
+    <None Include="Resources\plus %282%29.png" />
+    <None Include="Resources\playrecordson.png" />
+    <None Include="Resources\play records.png" />
+    <None Include="Resources\play34.png" />
+    <None Include="Resources\play33.png" />
+    <None Include="Resources\pl on.png" />
+    <None Include="Resources\pl off.png" />
+    <None Include="Resources\pl %282%29.png" />
+    <None Include="Resources\pl37.png" />
+    <None Include="Resources\pl36no.png" />
+    <None Include="Resources\pl36.png" />
+    <None Include="Resources\pge img 1.png" />
+    <None Include="Resources\pge img 1-36.png" />
+    <None Include="Resources\OPN green.png" />
+    <None Include="Resources\opn34.png" />
+    <None Include="Resources\opn33tb.png" />
+    <None Include="Resources\opn33.png" />
+    <None Include="Resources\offnew.png" />
+    <None Include="Resources\officett.png" />
+    <None Include="Resources\officett2.png" />
+    <None Include="Resources\office iconpng.png" />
+    <None Include="Resources\off.png" />
+    <None Include="Resources\off tool.png" />
+    <None Include="Resources\oaprevhov.png" />
+    <None Include="Resources\oaon.png" />
+    <None Include="Resources\oa.png" />
+    <None Include="Resources\oa2.png" />
+    <None Include="Resources\nw32.png" />
+    <None Include="Resources\nssd.png" />
+    <None Include="Resources\nss.png" />
+    <None Include="Resources\notify.png" />
+    <None Include="Resources\no.png" />
+    <None Include="Resources\no on.png" />
+    <None Include="Resources\newpwordbk.png" />
+    <None Include="Resources\my apps.png" />
+    <None Include="Resources\mre.png" />
+    <None Include="Resources\mov.png" />
+    <None Include="Resources\mnu item2.png" />
+    <None Include="Resources\mnu item1.png" />
+    <None Include="Resources\messback.png" />
+    <None Include="Resources\menu back1.png" />
+    <None Include="Resources\men stat.png" />
+    <None Include="Resources\men over.png" />
+    <None Include="Resources\memorysys.png" />
+    <None Include="Resources\medtt.png" />
+    <None Include="Resources\medtt3.png" />
+    <None Include="Resources\medtt2.png" />
+    <None Include="Resources\mediafffffffx00.png" />
+    <None Include="Resources\media img 35.png" />
+    <None Include="Resources\media img 12.png" />
+    <None Include="Resources\media img 2.png" />
+    <None Include="Resources\media img 1.png" />
+    <None Include="Resources\medhovpre.png" />
+    <None Include="Resources\locknkey3.png" />
+    <None Include="Resources\Immagine1.png" />
+    <None Include="Resources\icon use onlyx33turq.png" />
+    <None Include="Resources\icon use onlyx33gry.png" />
+    <None Include="Resources\icon use onlyx33grn.png" />
+    <None Include="Resources\icon use onlyx33dr.png" />
+    <None Include="Resources\icon use onlyx33.png" />
+    <None Include="Resources\hlp33.png" />
+    <None Include="Resources\HDbb.png" />
+    <None Include="Resources\front arr.png" />
+    <None Include="Resources\fledvlop2.png" />
+    <None Include="Resources\fle dev.png" />
+    <None Include="Resources\fle 35.png" />
+    <None Include="Resources\fle36.png" />
+    <None Include="Resources\fle34rt.png" />
+    <None Include="Resources\fle34mlt.png" />
+    <None Include="Resources\fle34dwn.png" />
+    <None Include="Resources\fle34devlop.png" />
+    <None Include="Resources\fle34delop2.png" />
+    <None Include="Resources\fle34bt.png" />
+    <None Include="Resources\fle33.png" />
+    <None Include="Resources\fle22.png" />
+    <None Include="Resources\fle3d.png" />
+    <None Include="Resources\fle3d235n2.png" />
+    <None Include="Resources\fle3d235.png" />
+    <None Include="Resources\fle3d2.png" />
+    <None Include="Resources\fle2.png" />
+    <None Include="Resources\fle1dvlop.png" />
+    <None Include="Resources\flakeon.png" />
+    <None Include="Resources\flakecl.png" />
+    <None Include="Resources\flake.png" />
+    <None Include="Resources\File.png" />
+    <None Include="Resources\File on.png" />
+    <None Include="Resources\file 1bt.png" />
+    <None Include="Resources\file1emle.png" />
+    <None Include="Resources\file1dwn.png" />
+    <None Include="Resources\fav.png" />
+    <None Include="Resources\fav on.png" />
+    <None Include="Resources\fav of.png" />
+    <None Include="Resources\exttlshov.png" />
+    <None Include="Resources\exting.png" />
+    <None Include="Resources\extcomplete.png" />
+    <None Include="Resources\ext 2.png" />
+    <None Include="Resources\ethrnt 2on.png" />
+    <None Include="Resources\ethrnt1.png" />
+    <None Include="Resources\enene32.png" />
+    <None Include="Resources\edt.png" />
+    <None Include="Resources\drw.png" />
+    <None Include="Resources\diagnostics mnu.png" />
+    <None Include="Resources\devtt.png" />
+    <None Include="Resources\devprvhov.png" />
+    <None Include="Resources\devon.png" />
+    <None Include="Resources\devloper img 1.png" />
+    <None Include="Resources\devlop.png" />
+    <None Include="Resources\devlop icns.png" />
+    <None Include="Resources\devlop 2.png" />
+    <None Include="Resources\devlop35no.png" />
+    <None Include="Resources\devlop35.png" />
+    <None Include="Resources\devlop2on.png" />
+    <None Include="Resources\dev.png" />
+    <None Include="Resources\debg.png" />
+    <None Include="Resources\cur.png" />
+    <None Include="Resources\cstt.png" />
+    <None Include="Resources\cstt2.png" />
+    <None Include="Resources\cshovpre.png" />
+    <None Include="Resources\csel.png" />
+    <None Include="Resources\cpwordbk.png" />
+    <None Include="Resources\convmenu.png" />
+    <None Include="Resources\control basics.png" />
+    <None Include="Resources\conicle3.png" />
+    <None Include="Resources\conicle2.png" />
+    <None Include="Resources\conicle1.png" />
+    <None Include="Resources\clsenewexyonev.png" />
+    <None Include="Resources\clsenewexyon.png" />
+    <None Include="Resources\clsenewexy.png" />
+    <None Include="Resources\clsenew.png" />
+    <None Include="Resources\clse.png" />
+    <None Include="Resources\clse on.png" />
+    <None Include="Resources\clse clc.png" />
+    <None Include="Resources\clse %282%29.png" />
+    <None Include="Resources\cles on.png" />
+    <None Include="Resources\cles norm.png" />
+    <None Include="Resources\cht.png" />
+    <None Include="Resources\cht on.png" />
+    <None Include="Resources\cht of.png" />
+    <None Include="Resources\cht extra.png" />
+    <None Include="Resources\champuside.png" />
+    <None Include="Resources\champ3usd.png" />
+    <None Include="Resources\champ3.png" />
+    <None Include="Resources\champ2upsde.png" />
+    <None Include="Resources\champ2.png" />
+    <None Include="Resources\buttonright.png" />
+    <None Include="Resources\buttonleft.png" />
+    <None Include="Resources\button.png" />
+    <None Include="Resources\buss.png" />
+    <None Include="Resources\buss32no.png" />
+    <None Include="Resources\buss32.png" />
+    <None Include="Resources\bttn web.png" />
+    <None Include="Resources\bttn use.png" />
+    <None Include="Resources\bttn on.png" />
+    <None Include="Resources\btsimp.png" />
+    <None Include="Resources\btnstyle2.png" />
+    <None Include="Resources\btnsimp2.png" />
+    <None Include="Resources\btnsim1.png" />
+    <None Include="Resources\btnshadon.png" />
+    <None Include="Resources\btnshadcl.png" />
+    <None Include="Resources\btnshad.png" />
+    <None Include="Resources\btnnormon.png" />
+    <None Include="Resources\btnnormcl.png" />
+    <None Include="Resources\btnnorm.png" />
+    <None Include="Resources\btn.png" />
+    <None Include="Resources\btmnmnu.png" />
+    <None Include="Resources\bticon38.png" />
+    <None Include="Resources\bt39.png" />
+    <None Include="Resources\bt37end.png" />
+    <None Include="Resources\bt36end.png" />
+    <None Include="Resources\browseram.png" />
+    <None Include="Resources\bnnr.png" />
+    <None Include="Resources\bld.png" />
+    <None Include="Resources\bkpword.png" />
+    <None Include="Resources\beta techx128gret.png" />
+    <None Include="Resources\beta techx128 noir.png" />
+    <None Include="Resources\beta tech.png" />
+    <None Include="Resources\beta tech noirx128.png" />
+    <None Include="Resources\beta tech3.png" />
+    <None Include="Resources\beta tech2.png" />
+    <None Include="Resources\bcksettings.png" />
+    <None Include="Resources\backtabyellar.png" />
+    <None Include="Resources\backtabturqspec.png" />
+    <None Include="Resources\backtabturq.png" />
+    <None Include="Resources\backtabspec.png" />
+    <None Include="Resources\backtabreed.png" />
+    <None Include="Resources\backtabpurpspec.png" />
+    <None Include="Resources\backtabpurprepnt.png" />
+    <None Include="Resources\backtabpurpre.png" />
+    <None Include="Resources\backtaborspec.png" />
+    <None Include="Resources\backtabgrnspec.png" />
+    <None Include="Resources\backtabgrn.png" />
+    <None Include="Resources\backtabdevspec.png" />
+    <None Include="Resources\backtabdev.png" />
+    <None Include="Resources\backtab1.png" />
+    <None Include="Resources\back arr.png" />
+    <None Include="Resources\back34.png" />
+    <None Include="Resources\back33.png" />
+    <None Include="Resources\art file.png" />
+    <None Include="Resources\apps34no.png" />
+    <None Include="Resources\apps34.png" />
+    <None Include="Resources\apps33.png" />
+    <None Include="Resources\app running.png" />
+    <None Include="Resources\alternative 1.png" />
+    <None Include="Resources\add file.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\wlcme.png" />
+    <None Include="Resources\Compound46691.gif" />
+    <None Include="Resources\Compound4669.gif" />
+    <None Include="Resources\GTAtitles.gif" />
+    <None Include="Resources\aero_arrow.cur" />
+    <None Include="Resources\cur.cur" />
+    <None Include="Resources\ddaw.wma" />
+    <None Include="Resources\clse new1.png" />
+    <None Include="Resources\clse new.png" />
+    <None Include="Resources\scroller img1.png" />
+    <None Include="Main_TemporaryKey.pfx" />
+    <None Include="Resources\errorhandlerfile.txt" />
+    <None Include="Resources\ethrnt 21.png" />
+    <None Include="Resources\ethrnt 1.png" />
+    <None Include="Resources\ethrnt 11.png" />
+    <None Include="Resources\backext.png" />
+    <None Include="Resources\beta tech.ico" />
+    <None Include="Resources\bt.ico" />
+    <None Include="Resources\SI wintno.png" />
+    <None Include="Resources\apps341.png" />
+    <None Include="Resources\enene321.png" />
+    <None Include="Resources\File on2.png" />
+    <None Include="Resources\men over1.png" />
+    <None Include="Resources\devlop21.png" />
+    <None Include="Resources\alternative 2.png" />
+    <None Include="Resources\exting1.png" />
+    <None Include="Resources\clse %282%293.png" />
+    <None Include="Resources\men stat11.png" />
+    <None Include="Resources\men stat10.png" />
+    <None Include="Resources\men stat9.png" />
+    <None Include="Resources\devloper img 11.png" />
+    <None Include="Resources\men stat8.png" />
+    <None Include="Resources\men stat7.png" />
+    <None Include="Resources\men stat6.png" />
+    <None Include="Resources\men stat5.png" />
+    <None Include="Resources\men stat4.png" />
+    <None Include="Resources\men stat3.png" />
+    <None Include="Resources\men stat2.png" />
+    <None Include="Resources\men stat1.png" />
+    <None Include="Resources\fle331.png" />
+    <None Include="Resources\pl on3.png" />
+    <None Include="Resources\hlp331.png" />
+    <None Include="Resources\opn331.png" />
+    <None Include="Resources\plus on1.png" />
+    <None Include="Resources\pl on2.png" />
+    <None Include="Resources\Task man1.png" />
+    <None Include="Resources\pl on1.png" />
+    <None Include="Resources\exp2.png" />
+    <None Include="Resources\devlop1.png" />
+    <None Include="Resources\back8.png" />
+    <None Include="Resources\back7.png" />
+    <None Include="Resources\back6.png" />
+    <None Include="Resources\back5.png" />
+    <None Include="Resources\back4.png" />
+    <None Include="Resources\back3.png" />
+    <None Include="Resources\back2.png" />
+    <None Include="Resources\back1.png" />
+    <None Include="Resources\fle24.png" />
+    <None Include="Resources\fle23.png" />
+    <None Include="Resources\fle21.png" />
+    <None Include="Resources\clse %282%292.png" />
+    <None Include="Resources\disrupt1.png" />
+    <None Include="Resources\box 2.png" />
+    <None Include="Resources\plus off2.png" />
+    <None Include="Resources\File on1.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\clse1.png" />
+    <None Include="Resources\Task man.png" />
+    <None Include="Resources\banner xmcuty.png" />
+    <None Include="Resources\banner xmcutty1.png" />
+    <None Include="Resources\x2.png" />
+    <None Include="Resources\x1.png" />
+    <None Include="Resources\cles on1.png" />
+    <None Include="Resources\clse %282%291.png" />
+    <None Include="Resources\fav of1.png" />
+    <None Include="Resources\plus off1.png" />
+    <None Include="Resources\su.png" />
+    <None Include="Resources\SI Email.png" />
+    <None Include="Resources\exp1.png" />
+    <None Include="Resources\ext 21.png" />
+    <None Include="Resources\stcqcbr.png" />
+    <None Include="Resources\qbback.png" />
+    <None Include="Resources\nullbnnr.png" />
+    <None Include="Resources\dd1.png" />
+    <None Include="Resources\Blue bar.png" />
+    <None Include="Resources\win 32 bns21.png" />
+    <None Include="Resources\othban1.PNG" />
+    <None Include="Resources\othban.PNG" />
+    <None Include="Resources\bttn1.png" />
+    <None Include="Resources\dividor.png" />
+    <None Include="Resources\disrupt.png" />
+    <None Include="Resources\banner xmcutty.png" />
+    <None Include="Resources\dd.png" />
+    <None Include="Resources\bttn.png" />
+    <None Include="Resources\wallpaper190.jpg" />
+    <None Include="Resources\pic.jpg" />
+    <None Include="Resources\normal_Glacier National Park, Montana.jpg" />
+    <None Include="Resources\view from skyway.JPG" />
+    <None Include="Resources\zion-national-park.jpg" />
+    <None Include="Resources\Hlpsi.png" />
+    <None Include="Resources\SI Gaming.png" />
+    <None Include="Resources\dwnman.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\SI Media.png" />
+    <None Include="Resources\win 32 bns.png" />
+    <None Include="Resources\cht of1.png" />
+    <None Include="SalesBook_dtst.xsc">
+      <DependentUpon>SalesBook_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="SalesBook_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesBook_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesBook_dtst.xss">
+      <DependentUpon>SalesBook_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Sec_AMDataSet.xsc">
+      <DependentUpon>Sec_AMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Sec_AMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sec_AMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sec_AMDataSet.xss">
+      <DependentUpon>Sec_AMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SO_dtst.xsc">
+      <DependentUpon>SO_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="SO_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SO_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SO_dtst.xss">
+      <DependentUpon>SO_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="SO_invntry_dtst.xsc">
+      <DependentUpon>SO_invntry_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="SO_invntry_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SO_invntry_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SO_invntry_dtst.xss">
+      <DependentUpon>SO_invntry_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="suppmgmt_dtst.xsc">
+      <DependentUpon>suppmgmt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="suppmgmt_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suppmgmt_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suppmgmt_dtst.xss">
+      <DependentUpon>suppmgmt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Tasks_DataSet.xsc">
+      <DependentUpon>Tasks_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tasks_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Tasks_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Tasks_DataSet.xss">
+      <DependentUpon>Tasks_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="transmn_dtst.xsc">
+      <DependentUpon>transmn_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="transmn_dtst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>transmn_dtst.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="transmn_dtst.xss">
+      <DependentUpon>transmn_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="UCBDataSet.xsc">
+      <DependentUpon>UCBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UCBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UCBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UCBDataSet.xss">
+      <DependentUpon>UCBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="visual.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>visual.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WinInetConnectorLib">
+      <Guid>{FEE17FA9-A46F-11D6-9500-00065B874123}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

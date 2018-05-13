@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="des1.Text" xml:space="preserve">
+    <value>This Product is A Part of the Amatrix Data Center Frame-Work.
+
+-----------------------------------------------------------------------------
+
+Amatrix Data Center
+Copyright (C) 2013  Oscar Arjun Singh Tark, Benjamin Jack Johnson
+
+Astreous Free Software License (ASL) Version 1.0, Renewed to Version 1.1
+Amended on the 25th of May 2012, Renewed on the 23rd of September 2012
+[Amatrix Data Center(“Amatrix”)]
+License Registration Number ASL-2512-0x2 Licensed on 24-05-2012]
+Effective Internationally
+ASL 2012 Astreous
+This license contract is between The Licensee Party (“YOU”) and the Distribution Party (“Astreous”) for the underlying TERMS:
+
+&gt; This Software is Wholly owned by the Main Distribution Party (“Astreous”), you may redistribute this software non-commercially as a whole but not any portion of the said Software. Commercially Redistributing this Software is NOT Allowed (This, Excluding The Distribution Party (“Astreous”)).
+
+&gt; This Software May NOT be Commercially Leased for any purpose by any Licensee Party or Third (Party). This, Excluding the Distribution Party (“Astreous”) Which May Lease In Terms Favorable.
+
+&gt; If this Software Has been purchased trough (a) monetary or any form of monetary exchange, and has Not been Freely Distributed(Astreous May Distribute as Pleases) to the Licensee Party (“YOU”). This Software is thereafter equally evaluated as a “FRAUD COPY” making “YOU” and the Sales party (Not Astreous) which has sold you the software for any form of monetary exchange eligible for ASL infringement. Other Cases in which Infringements are liable:
+
+&gt; Sublicensing This Software Commercially is not Allowed. Only Astreous has Exclusive rights to   
+   Sublicense This Software Commercially.
+&gt; Using Parts of this Software fully as Commercial Propriety Software is not Allowed. Only 
+    Astreous has Exclusive Rights to do So. 
+&gt; Renting/Leasing This Software Commercially. Only Astreous has Exclusive Rights to do So. 
+&gt; Selling/Re-Selling This Software Commercially. Only Astreous has Exclusive Rights to do So. 
+&gt; Disassembling/Reverse Engineering or any other ways in which this Software May be de-
+   constructed is performed for Commercial Purposes. Only Astreous has Exclusive Rights to so.
+&gt; Tampering with the mentioned “ASL Licensing system” Contained within the Software in 
+   Question. Only Astreous has Exclusive Rights to do So. 
+&gt; Altering/Modifying/Tampering with the Object Code of the Software in Question for Commercial      
+    Purposes. Only Astreous has Exclusive Rights to do So. 
+
+“Astreous” Being the Main Distribution Party is Not Liable for the Above Infringements.
+
+PRIVACY STATEMENT:
+
+&gt; By Accepting This License You Accept The Following : During the Use Duration of This Program the Distribution Party (“Astreous”) will not Gather Sensitive Information from Your System. Only Information About Application Errors/Bugs will be Sent to Astreous.
+
+WARRANTY STATEMENT:
+
+&gt; The SOFTWARE in question is supplied "AS IS". The Distribution Party ("Astreous") Does NOT assume any responsibility for the malfunctioning of any part of hardware; no warranties will be supplied for the software in question in any scenario. The user must assume the entire risk of using the SOFTWARE. The Licensee Party may acquire a System Check and recovery from the Distribution Party as long as costs are not imposed on the Distribution Party, this, unless issued by a Written Agreement provided (by) the Distribution Party including the Signature of both Parties Which is valid for one Mentioned Job Within the Time Frame within the said Agreement.
+
+ACCEPTANCE STATEMENT:
+
+&gt; By Accepting this License whether in “Software Form” or “Tangible Form” you acquire the Title of “Licensee Party” of the Software in Question.
+
+COPYRIGHT CLAIMS:
+
+&gt; This Software and all its Parts published or unpublished are not Liable by copyright claim by any Party other than the Distribution Party (“Astreous”) by agreeing to this agreement you claim that the ownership and authorship of this Software and its Copyright are of the Distribution Party (“Astreous”) and of no other Party.
+
+LIMITED LIABILITY STATEMENT:
+
+&gt; The Distribution Party is NOT responsible for any damages caused by the use of the Software in Question and assumes no liability.
+
+TRADEMARKS:
+
+&gt; Trademarks Included within the Software as such The Logo/Icon of the Software and It’s main Emblem/Icon/Emblem may not be Modified or Used For Commercial Reasons and, may NOT be used within other Products which were NOT Created by the Distribution Party and which have NOT Included the Author Names of the Distribution Party within Authors Section of the Infringing Product. If These (The Logo/Icon/Emblem) are Used Without Permission by the Distribution Party, The Distribution Party (“Astreous”) has so the Right to Persecute the Infringer to the Full Extent of the Law. THE DISTRIBUTION PARTY “ASTREOUS” HAS THE RIGHT TO RE-USE IT’S LOGO/ICON/EMBELM IN ANYWAY IT WOULD AND CAN.
+
+PATENTS:
+
+&gt; During the Validity of This License any Patents associated to the Software or any piece of it (the Software “Amatrix Data Center”/“Amatrix”) will subside from the Day of Registration of this Very License till Fifteen Years after the Registration of this License. Any claims of Patent Infringement will be Denied as They will be deemed Inactive during the Validity of this License.
+
+KEY TERMS:
+
+&gt; Party : A Single Individual or a Conglomerate of individuals.
+&gt; Distribution Party : Implicates The Owners of the License and Authors of the Software.
+&gt; Sales Party : The Infringing Party, Commercially selling the Software Through Monetary.   Exchange.
+&gt; The Licensee Party : The Licensee/YOU.
+
+
+Product Version 4.1, Build 4.1.3.0</value>
+  </data>
+  <metadata name="abtclse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <metadata name="dectmeabt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>212, 17</value>
+  </metadata>
+</root>

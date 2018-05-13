@@ -1,0 +1,16 @@
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.Form1.resources
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.Properties.Resources.resources
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.csproj.GenerateResource.Cache
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\bin\Debug\Astreous_Device_Module.exe
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\bin\Debug\Astreous_Device_Module.pdb
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.exe
+C:\Users\OAC Internet User\Documents\Visual Studio 2008\Projects\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.pdb
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\bin\Debug\Astreous_Device_Module.exe
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\bin\Debug\Astreous_Device_Module.pdb
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\ResolveAssemblyReference.cache
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.Form1.resources
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.Properties.Resources.resources
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.csproj.GenerateResource.Cache
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.exe
+E:\Misc\kingst\s-[0ffxx3]\dll\Astreous_Device_Module\Astreous_Device_Module\obj\Debug\Astreous_Device_Module.pdb

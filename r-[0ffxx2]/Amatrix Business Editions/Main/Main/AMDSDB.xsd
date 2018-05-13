@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AMDSDB" targetNamespace="http://tempuri.org/AMDSDB.xsd" xmlns:mstns="http://tempuri.org/AMDSDB.xsd" xmlns="http://tempuri.org/AMDSDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Main.Properties.Settings.GlobalReference.Default.Database1ConnectionString" Provider="Microsoft.SqlServerCe.Client.3.5" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AMDSDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AMDSDB" msprop:Generator_DataSetName="AMDSDB" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ACCLoc" msdata:CaseSensitive="True" msprop:Generator_UserTableName="ACCLoc" msprop:Generator_RowDeletedName="ACCLocRowDeleted" msprop:Generator_RowChangedName="ACCLocRowChanged" msprop:Generator_RowClassName="ACCLocRow" msprop:Generator_RowChangingName="ACCLocRowChanging" msprop:Generator_RowEvArgName="ACCLocRowChangeEvent" msprop:Generator_RowEvHandlerName="ACCLocRowChangeEventHandler" msprop:Generator_TableClassName="ACCLocDataTable" msprop:Generator_TableVarName="tableACCLoc" msprop:Generator_RowDeletingName="ACCLocRowDeleting" msprop:Generator_TablePropName="ACCLoc">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Serial_x0020_Number" msprop:Generator_UserColumnName="Serial Number" msprop:Generator_ColumnPropNameInRow="Serial_Number" msprop:Generator_ColumnVarNameInTable="columnSerial_Number" msprop:Generator_ColumnPropNameInTable="Serial_NumberColumn" type="xs:string" />
+              <xs:element name="Date_x0020_of_x0020_Transaction" msprop:Generator_UserColumnName="Date of Transaction" msprop:Generator_ColumnVarNameInTable="columnDate_of_Transaction" msprop:Generator_ColumnPropNameInRow="Date_of_Transaction" msprop:Generator_ColumnPropNameInTable="Date_of_TransactionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Particulars" msprop:Generator_UserColumnName="Particulars" msprop:Generator_ColumnVarNameInTable="columnParticulars" msprop:Generator_ColumnPropNameInRow="Particulars" msprop:Generator_ColumnPropNameInTable="ParticularsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="L.F" msprop:Generator_UserColumnName="L.F" msprop:Generator_ColumnVarNameInTable="_columnL_F" msprop:Generator_ColumnPropNameInRow="_L_F" msprop:Generator_ColumnPropNameInTable="_L_FColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ACCLocKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ACCLoc" />
+      <xs:field xpath="mstns:Serial_x0020_Number" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="ACCLoc_ACCLoc" msdata:parent="ACCLoc" msdata:child="ACCLoc" msdata:parentkey="Serial_x0020_Number" msdata:childkey="Date_x0020_of_x0020_Transaction" msprop:Generator_UserRelationName="ACCLoc_ACCLoc" msprop:Generator_RelationVarName="relationACCLoc_ACCLoc" msprop:Generator_UserChildTable="ACCLoc" msprop:Generator_UserParentTable="ACCLoc" msprop:Generator_ParentPropName="ACCLocRowParent" msprop:Generator_ChildPropName="GetACCLocRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

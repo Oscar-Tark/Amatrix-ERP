@@ -1,0 +1,10 @@
+C:\Users\O.A.C\Documents\Visual Studio 2008\Projects\amdsam\amdsam\bin\Debug\amdsam.dll
+C:\Users\O.A.C\Documents\Visual Studio 2008\Projects\amdsam\amdsam\bin\Debug\amdsam.pdb
+C:\Users\O.A.C\Documents\Visual Studio 2008\Projects\amdsam\amdsam\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\O.A.C\Documents\Visual Studio 2008\Projects\amdsam\amdsam\obj\Debug\amdsam.dll
+C:\Users\O.A.C\Documents\Visual Studio 2008\Projects\amdsam\amdsam\obj\Debug\amdsam.pdb
+D:\My shit\BT\Sys\Amatrix Genuine Edition\amdsam\bin\Debug\amdsam.dll
+D:\My shit\BT\Sys\Amatrix Genuine Edition\amdsam\bin\Debug\amdsam.pdb
+D:\My shit\BT\Sys\Amatrix Genuine Edition\amdsam\obj\Debug\ResolveAssemblyReference.cache
+D:\My shit\BT\Sys\Amatrix Genuine Edition\amdsam\obj\Debug\amdsam.dll
+D:\My shit\BT\Sys\Amatrix Genuine Edition\amdsam\obj\Debug\amdsam.pdb
