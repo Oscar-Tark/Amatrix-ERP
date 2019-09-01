@@ -231,43 +231,6 @@
             this.bill_inf2 = new System.Windows.Forms.TextBox();
             this.bill_inf1 = new System.Windows.Forms.TextBox();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shippersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billToAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shipToAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billToContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shipToContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billToFaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shipToFaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billToEmailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shipToEmailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitsOrderedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitsDeliveredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.profitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.owingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.owingAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paidAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vatRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.otherTaxRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.otherTaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalAfterTaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindedToJournalEntryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindedToJournalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.invoiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.invoice_dataset = new Main.invoice_dataset();
             this.stwin = new System.Windows.Forms.StatusStrip();
             this.reszz = new System.Windows.Forms.ToolStripSplitButton();
             this.onlyWidthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -529,6 +492,36 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
+            this.prod_box = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tms = new System.Windows.Forms.Timer(this.components);
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIDNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isCurrentProjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productConsumerPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productTaxationCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseAddressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseSectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseAisleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseShelfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otherLoacationInformationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imagePathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplyChainDataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prodmgmtBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prodmgmt_dtst = new Main.prodmgmt_dtst();
             this.corporateNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameIndividualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameIndividualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -557,39 +550,46 @@
             this.prefersLogisticsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cust_dtst = new Main.Cust_dtst();
-            this.label12 = new System.Windows.Forms.Label();
-            this.prodmgmt_dtst = new Main.prodmgmt_dtst();
-            this.prodmgmtBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shippersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billToAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shipToAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billToContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shipToContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billToFaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shipToFaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billToEmailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shipToEmailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitsOrderedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitsDeliveredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.profitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.owingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.owingAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paidAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vatRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otherTaxRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otherTaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalAfterTaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindedToJournalEntryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindedToJournalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.invoiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.invoice_dataset = new Main.invoice_dataset();
             this.prod_mgmtTableAdapter = new Main.prodmgmt_dtstTableAdapters.Prod_mgmtTableAdapter();
-            this.prod_box = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productIDNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isCurrentProjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productConsumerPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productTaxationCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wareHouseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wareHouseAddressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wareHouseSectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wareHouseAisleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wareHouseShelfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.otherLoacationInformationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imagePathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplyChainDataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
             this.customersTableAdapter = new Main.Cust_dtstTableAdapters.CustomersTableAdapter();
             this.invoiceTableAdapter = new Main.invoice_datasetTableAdapters.invoiceTableAdapter();
-            this.tms = new System.Windows.Forms.Timer(this.components);
             this.pnl_journvw.SuspendLayout();
             this.summpnl.SuspendLayout();
             this.tswin3.SuspendLayout();
@@ -608,8 +608,6 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoiceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoice_dataset)).BeginInit();
             this.stwin.SuspendLayout();
             this.tswin.SuspendLayout();
             this.cnbnn1.SuspendLayout();
@@ -625,13 +623,15 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cust_dtst)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodmgmt_dtst)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodmgmtBindingSource)).BeginInit();
             this.prod_box.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodmgmtBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodmgmt_dtst)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cust_dtst)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoiceBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoice_dataset)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_journvw
@@ -648,8 +648,8 @@
             // 
             // summpnl
             // 
-            this.summpnl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.summpnl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.summpnl.BackColor = System.Drawing.Color.White;
             this.summpnl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.summpnl.Controls.Add(this.tswin3);
@@ -680,12 +680,12 @@
             this.tswin3.Size = new System.Drawing.Size(202, 25);
             this.tswin3.TabIndex = 15;
             this.tswin3.Text = "toolStrip1";
-            this.tswin3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.tswin3_MouseUp);
-            this.tswin3.DoubleClick += new System.EventHandler(this.tswin3_DoubleClick);
-            this.tswin3.MouseEnter += new System.EventHandler(this.tswin3_MouseEnter);
-            this.tswin3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tswin3_MouseDown);
-            this.tswin3.MouseLeave += new System.EventHandler(this.tswin3_MouseLeave);
             this.tswin3.Click += new System.EventHandler(this.tswin3_Click);
+            this.tswin3.DoubleClick += new System.EventHandler(this.tswin3_DoubleClick);
+            this.tswin3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tswin3_MouseDown);
+            this.tswin3.MouseEnter += new System.EventHandler(this.tswin3_MouseEnter);
+            this.tswin3.MouseLeave += new System.EventHandler(this.tswin3_MouseLeave);
+            this.tswin3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.tswin3_MouseUp);
             // 
             // cnbnn3
             // 
@@ -782,8 +782,8 @@
             // 
             // tabControl2
             // 
-            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.ImageList = this.il;
@@ -819,7 +819,7 @@
             this.textBox1.Size = new System.Drawing.Size(179, 56);
             this.textBox1.TabIndex = 18;
             this.textBox1.Text = "Click on a Specified Row if the\r\nCustomer (Shipping To) column\r\nis Not Empty and " +
-                "Valid You Will\r\nBe Brought to the Customers \r\nInformation Page";
+    "Valid You Will\r\nBe Brought to the Customers \r\nInformation Page";
             // 
             // button11
             // 
@@ -906,9 +906,9 @@
             // 
             // t_v
             // 
-            this.t_v.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.t_v.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.t_v.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.t_v.ForeColor = System.Drawing.Color.DimGray;
             this.t_v.FullRowSelect = true;
@@ -1058,48 +1058,48 @@
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(130, 22);
             this.toolStripMenuItem12.Text = "To Left";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.movtolef3_Click);
             // 
             // toolStripMenuItem13
             // 
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(130, 22);
             this.toolStripMenuItem13.Text = "To Right";
             this.toolStripMenuItem13.Click += new System.EventHandler(this.movtrgt_Click);
             // 
             // toolStripMenuItem14
             // 
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(130, 22);
             this.toolStripMenuItem14.Text = "To Bottom";
             this.toolStripMenuItem14.Click += new System.EventHandler(this.movtbott3_Click);
             // 
             // toolStripMenuItem15
             // 
             this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(130, 22);
             this.toolStripMenuItem15.Text = "To Top";
             this.toolStripMenuItem15.Click += new System.EventHandler(this.movtop3_Click);
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(128, 6);
+            this.toolStripSeparator15.Size = new System.Drawing.Size(127, 6);
             // 
             // toolStripMenuItem16
             // 
             this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(131, 22);
+            this.toolStripMenuItem16.Size = new System.Drawing.Size(130, 22);
             this.toolStripMenuItem16.Text = "Free Style";
             this.toolStripMenuItem16.Click += new System.EventHandler(this.freesty3_Click);
             // 
             // dgvwin
             // 
-            this.dgvwin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvwin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvwin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dgvwin.Controls.Add(this.tbc1);
             this.dgvwin.Controls.Add(this.stwin);
@@ -1204,7 +1204,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(85, 22);
             this.toolStripLabel1.Text = "Total Invoices :";
             this.toolStripLabel1.Visible = false;
             // 
@@ -1224,7 +1224,7 @@
             // ttl_prof
             // 
             this.ttl_prof.Name = "ttl_prof";
-            this.ttl_prof.Size = new System.Drawing.Size(72, 22);
+            this.ttl_prof.Size = new System.Drawing.Size(71, 22);
             this.ttl_prof.Text = "Total Profit :";
             // 
             // ttprof_inf
@@ -1241,7 +1241,7 @@
             // ttl_cst
             // 
             this.ttl_cst.Name = "ttl_cst";
-            this.ttl_cst.Size = new System.Drawing.Size(72, 22);
+            this.ttl_cst.Size = new System.Drawing.Size(71, 22);
             this.ttl_cst.Text = "Total Costs :";
             // 
             // ttcst_inf
@@ -1345,7 +1345,7 @@
             this.dataCommToolStripMenuItem.BackgroundImage = global::Main.Properties.Resources.vvm5;
             this.dataCommToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dataCommToolStripMenuItem.Name = "dataCommToolStripMenuItem";
-            this.dataCommToolStripMenuItem.Size = new System.Drawing.Size(301, 22);
+            this.dataCommToolStripMenuItem.Size = new System.Drawing.Size(300, 22);
             this.dataCommToolStripMenuItem.Text = "Data Commands";
             // 
             // shw_here
@@ -1353,21 +1353,21 @@
             this.shw_here.Image = global::Main.Properties.Resources.rdio_btn;
             this.shw_here.ImageTransparentColor = System.Drawing.Color.White;
             this.shw_here.Name = "shw_here";
-            this.shw_here.Size = new System.Drawing.Size(301, 22);
+            this.shw_here.Size = new System.Drawing.Size(300, 22);
             this.shw_here.Text = "Go To Current Position Before a Command";
             this.shw_here.Click += new System.EventHandler(this.show_AllToolStripButton_Click_1);
             // 
             // toolStripSeparator32
             // 
             this.toolStripSeparator32.Name = "toolStripSeparator32";
-            this.toolStripSeparator32.Size = new System.Drawing.Size(298, 6);
+            this.toolStripSeparator32.Size = new System.Drawing.Size(297, 6);
             // 
             // showAllToolStripMenuItem1
             // 
             this.showAllToolStripMenuItem1.Image = global::Main.Properties.Resources.nw_rw;
             this.showAllToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.White;
             this.showAllToolStripMenuItem1.Name = "showAllToolStripMenuItem1";
-            this.showAllToolStripMenuItem1.Size = new System.Drawing.Size(301, 22);
+            this.showAllToolStripMenuItem1.Size = new System.Drawing.Size(300, 22);
             this.showAllToolStripMenuItem1.Text = "Show All";
             this.showAllToolStripMenuItem1.Click += new System.EventHandler(this.show_AllToolStripButton_Click_1);
             // 
@@ -1391,7 +1391,7 @@
             this.toolStripMenuItem83.Image = global::Main.Properties.Resources.simulatr;
             this.toolStripMenuItem83.ImageTransparentColor = System.Drawing.Color.White;
             this.toolStripMenuItem83.Name = "toolStripMenuItem83";
-            this.toolStripMenuItem83.Size = new System.Drawing.Size(301, 22);
+            this.toolStripMenuItem83.Size = new System.Drawing.Size(300, 22);
             this.toolStripMenuItem83.Text = "Show Aggregates";
             // 
             // toolStripMenuItem64
@@ -1449,24 +1449,26 @@
             // toolStripTextBox183
             // 
             this.toolStripTextBox183.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox183.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox183.Name = "toolStripTextBox183";
             this.toolStripTextBox183.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox183.Text = "Enter First Date (eg. 01-Jan-91)";
-            this.toolStripTextBox183.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox183.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox183.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox183.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox183.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox183.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripTextBox184
             // 
             this.toolStripTextBox184.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox184.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox184.Name = "toolStripTextBox184";
             this.toolStripTextBox184.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox184.Text = "Enter Last Date (eg. 02-Feb-92)";
-            this.toolStripTextBox184.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox184.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox184.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox184.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox184.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox184.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripButton261
             // 
@@ -1506,24 +1508,26 @@
             // toolStripTextBox185
             // 
             this.toolStripTextBox185.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox185.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox185.Name = "toolStripTextBox185";
             this.toolStripTextBox185.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox185.Text = "Enter First Date (eg. 01-Jan-91)";
-            this.toolStripTextBox185.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox185.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox185.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox185.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox185.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox185.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripTextBox186
             // 
             this.toolStripTextBox186.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox186.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox186.Name = "toolStripTextBox186";
             this.toolStripTextBox186.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox186.Text = "Enter Last Date (eg. 02-Feb-92)";
-            this.toolStripTextBox186.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox186.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox186.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox186.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox186.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox186.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripButton262
             // 
@@ -1568,24 +1572,26 @@
             // toolStripTextBox89
             // 
             this.toolStripTextBox89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox89.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox89.Name = "toolStripTextBox89";
             this.toolStripTextBox89.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox89.Text = "Enter First Date (eg. 01-Jan-91)";
-            this.toolStripTextBox89.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox89.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox89.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox89.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox89.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox89.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripTextBox90
             // 
             this.toolStripTextBox90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox90.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox90.Name = "toolStripTextBox90";
             this.toolStripTextBox90.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox90.Text = "Enter Last Date (eg. 02-Feb-92)";
-            this.toolStripTextBox90.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox90.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox90.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox90.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox90.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox90.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripButton140
             // 
@@ -1624,24 +1630,26 @@
             // toolStripTextBox87
             // 
             this.toolStripTextBox87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox87.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox87.Name = "toolStripTextBox87";
             this.toolStripTextBox87.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox87.Text = "Enter First Date (eg. 01-Jan-91)";
-            this.toolStripTextBox87.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox87.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox87.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox87.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox87.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripTextBox88
             // 
             this.toolStripTextBox88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox88.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox88.Name = "toolStripTextBox88";
             this.toolStripTextBox88.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox88.Text = "Enter Last Date (eg. 02-Feb-92)";
-            this.toolStripTextBox88.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox88.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox88.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox88.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox88.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripButton139
             // 
@@ -1685,24 +1693,26 @@
             // toolStripTextBox93
             // 
             this.toolStripTextBox93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox93.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox93.Name = "toolStripTextBox93";
             this.toolStripTextBox93.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox93.Text = "Enter First Date (eg. 01-Jan-91)";
-            this.toolStripTextBox93.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox93.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox93.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox93.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox93.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox93.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripTextBox94
             // 
             this.toolStripTextBox94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox94.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox94.Name = "toolStripTextBox94";
             this.toolStripTextBox94.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox94.Text = "Enter Last Date (eg. 02-Feb-92)";
-            this.toolStripTextBox94.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox94.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox94.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox94.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox94.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox94.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripButton142
             // 
@@ -1741,24 +1751,26 @@
             // toolStripTextBox91
             // 
             this.toolStripTextBox91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox91.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox91.Name = "toolStripTextBox91";
             this.toolStripTextBox91.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox91.Text = "Enter First Date (eg. 01-Jan-91)";
-            this.toolStripTextBox91.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox91.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox91.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox91.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox91.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox91.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripTextBox92
             // 
             this.toolStripTextBox92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox92.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox92.Name = "toolStripTextBox92";
             this.toolStripTextBox92.Size = new System.Drawing.Size(169, 23);
             this.toolStripTextBox92.Text = "Enter Last Date (eg. 02-Feb-92)";
-            this.toolStripTextBox92.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.toolStripTextBox92.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.toolStripTextBox92.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.toolStripTextBox92.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.toolStripTextBox92.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.toolStripTextBox92.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // toolStripButton141
             // 
@@ -1776,7 +1788,7 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(298, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(297, 6);
             // 
             // showByMonthDayYearToolStripMenuItem
             // 
@@ -1794,7 +1806,7 @@
             this.showByMonthDayYearToolStripMenuItem.Image = global::Main.Properties.Resources.simulatr;
             this.showByMonthDayYearToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.showByMonthDayYearToolStripMenuItem.Name = "showByMonthDayYearToolStripMenuItem";
-            this.showByMonthDayYearToolStripMenuItem.Size = new System.Drawing.Size(301, 22);
+            this.showByMonthDayYearToolStripMenuItem.Size = new System.Drawing.Size(300, 22);
             this.showByMonthDayYearToolStripMenuItem.Text = "Show By Month, Day, Year";
             // 
             // toolStripMenuItem65
@@ -1803,7 +1815,7 @@
             this.toolStripMenuItem65.BackgroundImage = global::Main.Properties.Resources.vvm5;
             this.toolStripMenuItem65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStripMenuItem65.Name = "toolStripMenuItem65";
-            this.toolStripMenuItem65.Size = new System.Drawing.Size(217, 22);
+            this.toolStripMenuItem65.Size = new System.Drawing.Size(216, 22);
             this.toolStripMenuItem65.Text = "Show By Month, Day, Year";
             // 
             // currmnth
@@ -1811,14 +1823,14 @@
             this.currmnth.Image = global::Main.Properties.Resources.simulatr;
             this.currmnth.ImageTransparentColor = System.Drawing.Color.White;
             this.currmnth.Name = "currmnth";
-            this.currmnth.Size = new System.Drawing.Size(217, 22);
+            this.currmnth.Size = new System.Drawing.Size(216, 22);
             this.currmnth.Text = "Current Month";
             this.currmnth.Click += new System.EventHandler(this.currmnth_Click);
             // 
             // toolStripSeparator75
             // 
             this.toolStripSeparator75.Name = "toolStripSeparator75";
-            this.toolStripSeparator75.Size = new System.Drawing.Size(214, 6);
+            this.toolStripSeparator75.Size = new System.Drawing.Size(213, 6);
             // 
             // byDayToolStripMenuItem
             // 
@@ -1829,7 +1841,7 @@
             this.byDayToolStripMenuItem.Image = global::Main.Properties.Resources.simulatr;
             this.byDayToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.byDayToolStripMenuItem.Name = "byDayToolStripMenuItem";
-            this.byDayToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.byDayToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.byDayToolStripMenuItem.Text = "By Day";
             // 
             // toolStripMenuItem103
@@ -1902,7 +1914,7 @@
             this.byMonthToolStripMenuItem.Image = global::Main.Properties.Resources.simulatr;
             this.byMonthToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.byMonthToolStripMenuItem.Name = "byMonthToolStripMenuItem";
-            this.byMonthToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.byMonthToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.byMonthToolStripMenuItem.Text = "By Month";
             // 
             // toolStripMenuItem104
@@ -1956,7 +1968,7 @@
             this.byYearToolStripMenuItem.Image = global::Main.Properties.Resources.simulatr;
             this.byYearToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.byYearToolStripMenuItem.Name = "byYearToolStripMenuItem";
-            this.byYearToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.byYearToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.byYearToolStripMenuItem.Text = "By Year";
             // 
             // toolStripMenuItem105
@@ -1971,12 +1983,13 @@
             // tvtxt17
             // 
             this.tvtxt17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvtxt17.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tvtxt17.Name = "tvtxt17";
             this.tvtxt17.Size = new System.Drawing.Size(121, 23);
             this.tvtxt17.Text = "Enter a Year (eg. 1991)";
+            this.tvtxt17.Click += new System.EventHandler(this.tvtxt20_Click);
             this.tvtxt17.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
             this.tvtxt17.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
-            this.tvtxt17.Click += new System.EventHandler(this.tvtxt20_Click);
             // 
             // tvvbtxt15
             // 
@@ -1994,7 +2007,7 @@
             // toolStripSeparator76
             // 
             this.toolStripSeparator76.Name = "toolStripSeparator76";
-            this.toolStripSeparator76.Size = new System.Drawing.Size(214, 6);
+            this.toolStripSeparator76.Size = new System.Drawing.Size(213, 6);
             // 
             // betweenToolStripMenuItem2
             // 
@@ -2006,7 +2019,7 @@
             this.betweenToolStripMenuItem2.Image = global::Main.Properties.Resources.simulatr;
             this.betweenToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.White;
             this.betweenToolStripMenuItem2.Name = "betweenToolStripMenuItem2";
-            this.betweenToolStripMenuItem2.Size = new System.Drawing.Size(217, 22);
+            this.betweenToolStripMenuItem2.Size = new System.Drawing.Size(216, 22);
             this.betweenToolStripMenuItem2.Text = "Between";
             // 
             // toolStripMenuItem106
@@ -2021,26 +2034,28 @@
             // tvtxt18
             // 
             this.tvtxt18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvtxt18.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tvtxt18.MaxLength = 20;
             this.tvtxt18.Name = "tvtxt18";
             this.tvtxt18.Size = new System.Drawing.Size(155, 23);
             this.tvtxt18.Text = "First Date (eg. 01-jan-91)";
-            this.tvtxt18.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.tvtxt18.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.tvtxt18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.tvtxt18.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.tvtxt18.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.tvtxt18.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // tvtxt19
             // 
             this.tvtxt19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tvtxt19.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tvtxt19.MaxLength = 20;
             this.tvtxt19.Name = "tvtxt19";
             this.tvtxt19.Size = new System.Drawing.Size(155, 23);
             this.tvtxt19.Text = "Second Date (eg. 02-feb-92)";
-            this.tvtxt19.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
-            this.tvtxt19.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             this.tvtxt19.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tvtxt20_KeyUp);
             this.tvtxt19.Click += new System.EventHandler(this.tvtxt20_Click);
+            this.tvtxt19.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
+            this.tvtxt19.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
             // tvvbtxt16
             // 
@@ -2063,7 +2078,7 @@
             this.showDueDateValuesAlsoToolStripMenuItem.Image = global::Main.Properties.Resources.tools;
             this.showDueDateValuesAlsoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.showDueDateValuesAlsoToolStripMenuItem.Name = "showDueDateValuesAlsoToolStripMenuItem";
-            this.showDueDateValuesAlsoToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.showDueDateValuesAlsoToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.showDueDateValuesAlsoToolStripMenuItem.Text = "Show Due Date Values Also";
             this.showDueDateValuesAlsoToolStripMenuItem.DropDownOpened += new System.EventHandler(this.showDueDateValuesAlsoToolStripMenuItem_DropDownOpened);
             // 
@@ -2073,7 +2088,7 @@
             this.toolStripMenuItem398.BackgroundImage = global::Main.Properties.Resources.vvm5;
             this.toolStripMenuItem398.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStripMenuItem398.Name = "toolStripMenuItem398";
-            this.toolStripMenuItem398.Size = new System.Drawing.Size(302, 22);
+            this.toolStripMenuItem398.Size = new System.Drawing.Size(301, 22);
             this.toolStripMenuItem398.Text = "Show Due Date Values Also (Currently : No)";
             // 
             // toolStripComboBox56
@@ -2166,6 +2181,7 @@
             // 
             this.uptxtdgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uptxtdgv.Enabled = false;
+            this.uptxtdgv.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.uptxtdgv.Name = "uptxtdgv";
             this.uptxtdgv.Size = new System.Drawing.Size(120, 23);
             this.uptxtdgv.Text = "Enter a Serial Number";
@@ -2213,6 +2229,7 @@
             // leftxtdgv
             // 
             this.leftxtdgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.leftxtdgv.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.leftxtdgv.Name = "leftxtdgv";
             this.leftxtdgv.Size = new System.Drawing.Size(114, 23);
             this.leftxtdgv.Text = "Enter a Cell";
@@ -2244,6 +2261,7 @@
             // dgvtxtright
             // 
             this.dgvtxtright.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dgvtxtright.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dgvtxtright.Name = "dgvtxtright";
             this.dgvtxtright.Size = new System.Drawing.Size(114, 23);
             this.dgvtxtright.Text = "Enter a Cell";
@@ -2293,6 +2311,7 @@
             // 
             this.dgvtxtleft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dgvtxtleft.Enabled = false;
+            this.dgvtxtleft.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dgvtxtleft.Name = "dgvtxtleft";
             this.dgvtxtleft.Size = new System.Drawing.Size(120, 23);
             this.dgvtxtleft.Text = "Enter a Serial Number";
@@ -2331,12 +2350,13 @@
             // 
             this.show_invc_of.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.show_invc_of.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.show_invc_of.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.show_invc_of.Name = "show_invc_of";
             this.show_invc_of.Size = new System.Drawing.Size(100, 25);
             this.show_invc_of.Text = "Show Invoice Of";
+            this.show_invc_of.Click += new System.EventHandler(this.tvtxt20_Click);
             this.show_invc_of.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
             this.show_invc_of.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
-            this.show_invc_of.Click += new System.EventHandler(this.tvtxt20_Click);
             // 
             // toolStripSeparator22
             // 
@@ -2356,8 +2376,8 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
@@ -2667,9 +2687,9 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.GhostWhite;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv.AutoGenerateColumns = false;
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dgv.BackgroundColor = System.Drawing.Color.White;
@@ -2744,271 +2764,16 @@
             this.dgv.Size = new System.Drawing.Size(794, 238);
             this.dgv.TabIndex = 1;
             this.dgv.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgv_CellBeginEdit);
+            this.dgv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellEndEdit);
+            this.dgv.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellEnter);
+            this.dgv.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellMouseEnter);
+            this.dgv.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellMouseLeave);
+            this.dgv.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_DataError);
+            this.dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_RowEnter);
             this.dgv.Sorted += new System.EventHandler(this.dgv_Sorted);
             this.dgv.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dgv_UserAddedRow);
-            this.dgv.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellMouseLeave);
-            this.dgv.Enter += new System.EventHandler(this.dgv_Enter);
-            this.dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_RowEnter);
-            this.dgv.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellMouseEnter);
-            this.dgv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellEndEdit);
-            this.dgv.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_DataError);
-            this.dgv.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellEnter);
             this.dgv.Click += new System.EventHandler(this.tswin_Click);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Serial Number";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Serial Number";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 98;
-            // 
-            // invoiceReferenceNumberIDDataGridViewTextBoxColumn
-            // 
-            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.DataPropertyName = "Invoice Reference Number (ID)";
-            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.HeaderText = "Invoice Reference Number (ID)";
-            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.Name = "invoiceReferenceNumberIDDataGridViewTextBoxColumn";
-            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Width = 55;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Due Date";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Due Date";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 78;
-            // 
-            // billersNameDataGridViewTextBoxColumn
-            // 
-            this.billersNameDataGridViewTextBoxColumn.DataPropertyName = "Billers Name";
-            this.billersNameDataGridViewTextBoxColumn.HeaderText = "Billers Name";
-            this.billersNameDataGridViewTextBoxColumn.Name = "billersNameDataGridViewTextBoxColumn";
-            this.billersNameDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // shippersNameDataGridViewTextBoxColumn
-            // 
-            this.shippersNameDataGridViewTextBoxColumn.DataPropertyName = "Shippers Name";
-            this.shippersNameDataGridViewTextBoxColumn.HeaderText = "Shippers Name";
-            this.shippersNameDataGridViewTextBoxColumn.Name = "shippersNameDataGridViewTextBoxColumn";
-            this.shippersNameDataGridViewTextBoxColumn.Width = 104;
-            // 
-            // billToAddressDataGridViewTextBoxColumn
-            // 
-            this.billToAddressDataGridViewTextBoxColumn.DataPropertyName = "Bill To (Address)";
-            this.billToAddressDataGridViewTextBoxColumn.HeaderText = "Bill To (Address)";
-            this.billToAddressDataGridViewTextBoxColumn.Name = "billToAddressDataGridViewTextBoxColumn";
-            this.billToAddressDataGridViewTextBoxColumn.Width = 108;
-            // 
-            // shipToAddressDataGridViewTextBoxColumn
-            // 
-            this.shipToAddressDataGridViewTextBoxColumn.DataPropertyName = "Ship To (Address)";
-            this.shipToAddressDataGridViewTextBoxColumn.HeaderText = "Ship To (Address)";
-            this.shipToAddressDataGridViewTextBoxColumn.Name = "shipToAddressDataGridViewTextBoxColumn";
-            this.shipToAddressDataGridViewTextBoxColumn.Width = 116;
-            // 
-            // billToContactDataGridViewTextBoxColumn
-            // 
-            this.billToContactDataGridViewTextBoxColumn.DataPropertyName = "Bill To Contact";
-            this.billToContactDataGridViewTextBoxColumn.HeaderText = "Bill To Contact";
-            this.billToContactDataGridViewTextBoxColumn.Name = "billToContactDataGridViewTextBoxColumn";
-            this.billToContactDataGridViewTextBoxColumn.Width = 101;
-            // 
-            // shipToContactDataGridViewTextBoxColumn
-            // 
-            this.shipToContactDataGridViewTextBoxColumn.DataPropertyName = "Ship To Contact";
-            this.shipToContactDataGridViewTextBoxColumn.HeaderText = "Ship To Contact";
-            this.shipToContactDataGridViewTextBoxColumn.Name = "shipToContactDataGridViewTextBoxColumn";
-            this.shipToContactDataGridViewTextBoxColumn.Width = 109;
-            // 
-            // billToFaxDataGridViewTextBoxColumn
-            // 
-            this.billToFaxDataGridViewTextBoxColumn.DataPropertyName = "Bill To Fax";
-            this.billToFaxDataGridViewTextBoxColumn.HeaderText = "Bill To Fax";
-            this.billToFaxDataGridViewTextBoxColumn.Name = "billToFaxDataGridViewTextBoxColumn";
-            this.billToFaxDataGridViewTextBoxColumn.Width = 81;
-            // 
-            // shipToFaxDataGridViewTextBoxColumn
-            // 
-            this.shipToFaxDataGridViewTextBoxColumn.DataPropertyName = "Ship To Fax";
-            this.shipToFaxDataGridViewTextBoxColumn.HeaderText = "Ship To Fax";
-            this.shipToFaxDataGridViewTextBoxColumn.Name = "shipToFaxDataGridViewTextBoxColumn";
-            this.shipToFaxDataGridViewTextBoxColumn.Width = 89;
-            // 
-            // billToEmailIDDataGridViewTextBoxColumn
-            // 
-            this.billToEmailIDDataGridViewTextBoxColumn.DataPropertyName = "Bill To Email ID";
-            this.billToEmailIDDataGridViewTextBoxColumn.HeaderText = "Bill To Email ID";
-            this.billToEmailIDDataGridViewTextBoxColumn.Name = "billToEmailIDDataGridViewTextBoxColumn";
-            this.billToEmailIDDataGridViewTextBoxColumn.Width = 103;
-            // 
-            // shipToEmailIDDataGridViewTextBoxColumn
-            // 
-            this.shipToEmailIDDataGridViewTextBoxColumn.DataPropertyName = "Ship To Email ID";
-            this.shipToEmailIDDataGridViewTextBoxColumn.HeaderText = "Ship To Email ID";
-            this.shipToEmailIDDataGridViewTextBoxColumn.Name = "shipToEmailIDDataGridViewTextBoxColumn";
-            this.shipToEmailIDDataGridViewTextBoxColumn.Width = 111;
-            // 
-            // itemDataGridViewTextBoxColumn
-            // 
-            this.itemDataGridViewTextBoxColumn.DataPropertyName = "Item";
-            this.itemDataGridViewTextBoxColumn.HeaderText = "Item";
-            this.itemDataGridViewTextBoxColumn.Name = "itemDataGridViewTextBoxColumn";
-            this.itemDataGridViewTextBoxColumn.Width = 52;
-            // 
-            // itemIDDataGridViewTextBoxColumn
-            // 
-            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item ID";
-            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item ID";
-            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
-            this.itemIDDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // itemDescriptionDataGridViewTextBoxColumn
-            // 
-            this.itemDescriptionDataGridViewTextBoxColumn.DataPropertyName = "Item Description";
-            this.itemDescriptionDataGridViewTextBoxColumn.HeaderText = "Item Description";
-            this.itemDescriptionDataGridViewTextBoxColumn.Name = "itemDescriptionDataGridViewTextBoxColumn";
-            this.itemDescriptionDataGridViewTextBoxColumn.Width = 108;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Unit Price";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Unit Price";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 78;
-            // 
-            // unitsOrderedDataGridViewTextBoxColumn
-            // 
-            this.unitsOrderedDataGridViewTextBoxColumn.DataPropertyName = "Units Ordered";
-            this.unitsOrderedDataGridViewTextBoxColumn.HeaderText = "Units Ordered";
-            this.unitsOrderedDataGridViewTextBoxColumn.Name = "unitsOrderedDataGridViewTextBoxColumn";
-            this.unitsOrderedDataGridViewTextBoxColumn.Width = 97;
-            // 
-            // unitsDeliveredDataGridViewTextBoxColumn
-            // 
-            this.unitsDeliveredDataGridViewTextBoxColumn.DataPropertyName = "Units Delivered";
-            this.unitsDeliveredDataGridViewTextBoxColumn.HeaderText = "Units Delivered";
-            this.unitsDeliveredDataGridViewTextBoxColumn.Name = "unitsDeliveredDataGridViewTextBoxColumn";
-            this.unitsDeliveredDataGridViewTextBoxColumn.Width = 104;
-            // 
-            // costDataGridViewTextBoxColumn
-            // 
-            this.costDataGridViewTextBoxColumn.DataPropertyName = "Cost";
-            this.costDataGridViewTextBoxColumn.HeaderText = "Cost";
-            this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
-            this.costDataGridViewTextBoxColumn.Width = 53;
-            // 
-            // profitDataGridViewTextBoxColumn
-            // 
-            this.profitDataGridViewTextBoxColumn.DataPropertyName = "Profit";
-            this.profitDataGridViewTextBoxColumn.HeaderText = "Profit";
-            this.profitDataGridViewTextBoxColumn.Name = "profitDataGridViewTextBoxColumn";
-            this.profitDataGridViewTextBoxColumn.Width = 56;
-            // 
-            // owingDataGridViewTextBoxColumn
-            // 
-            this.owingDataGridViewTextBoxColumn.DataPropertyName = "Owing";
-            this.owingDataGridViewTextBoxColumn.HeaderText = "Owing";
-            this.owingDataGridViewTextBoxColumn.Name = "owingDataGridViewTextBoxColumn";
-            this.owingDataGridViewTextBoxColumn.Width = 62;
-            // 
-            // owingAmountDataGridViewTextBoxColumn
-            // 
-            this.owingAmountDataGridViewTextBoxColumn.DataPropertyName = "Owing Amount";
-            this.owingAmountDataGridViewTextBoxColumn.HeaderText = "Owing Amount";
-            this.owingAmountDataGridViewTextBoxColumn.Name = "owingAmountDataGridViewTextBoxColumn";
-            this.owingAmountDataGridViewTextBoxColumn.Width = 101;
-            // 
-            // paidDataGridViewTextBoxColumn
-            // 
-            this.paidDataGridViewTextBoxColumn.DataPropertyName = "Paid";
-            this.paidDataGridViewTextBoxColumn.HeaderText = "Paid";
-            this.paidDataGridViewTextBoxColumn.Name = "paidDataGridViewTextBoxColumn";
-            this.paidDataGridViewTextBoxColumn.Width = 53;
-            // 
-            // paidAmountDataGridViewTextBoxColumn
-            // 
-            this.paidAmountDataGridViewTextBoxColumn.DataPropertyName = "Paid Amount";
-            this.paidAmountDataGridViewTextBoxColumn.HeaderText = "Paid Amount";
-            this.paidAmountDataGridViewTextBoxColumn.Name = "paidAmountDataGridViewTextBoxColumn";
-            this.paidAmountDataGridViewTextBoxColumn.Width = 92;
-            // 
-            // vatRateDataGridViewTextBoxColumn
-            // 
-            this.vatRateDataGridViewTextBoxColumn.DataPropertyName = "Vat Rate (%)";
-            this.vatRateDataGridViewTextBoxColumn.HeaderText = "Vat Rate (%)";
-            this.vatRateDataGridViewTextBoxColumn.Name = "vatRateDataGridViewTextBoxColumn";
-            this.vatRateDataGridViewTextBoxColumn.Width = 91;
-            // 
-            // vatDataGridViewTextBoxColumn
-            // 
-            this.vatDataGridViewTextBoxColumn.DataPropertyName = "Vat";
-            this.vatDataGridViewTextBoxColumn.HeaderText = "Vat";
-            this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
-            this.vatDataGridViewTextBoxColumn.Width = 48;
-            // 
-            // otherTaxRateDataGridViewTextBoxColumn
-            // 
-            this.otherTaxRateDataGridViewTextBoxColumn.DataPropertyName = "Other Tax Rate (%)";
-            this.otherTaxRateDataGridViewTextBoxColumn.HeaderText = "Other Tax Rate (%)";
-            this.otherTaxRateDataGridViewTextBoxColumn.Name = "otherTaxRateDataGridViewTextBoxColumn";
-            this.otherTaxRateDataGridViewTextBoxColumn.Width = 122;
-            // 
-            // otherTaxDataGridViewTextBoxColumn
-            // 
-            this.otherTaxDataGridViewTextBoxColumn.DataPropertyName = "Other Tax";
-            this.otherTaxDataGridViewTextBoxColumn.HeaderText = "Other Tax";
-            this.otherTaxDataGridViewTextBoxColumn.Name = "otherTaxDataGridViewTextBoxColumn";
-            this.otherTaxDataGridViewTextBoxColumn.Width = 79;
-            // 
-            // totalAfterTaxDataGridViewTextBoxColumn
-            // 
-            this.totalAfterTaxDataGridViewTextBoxColumn.DataPropertyName = "Total After Tax";
-            this.totalAfterTaxDataGridViewTextBoxColumn.HeaderText = "Total After Tax";
-            this.totalAfterTaxDataGridViewTextBoxColumn.Name = "totalAfterTaxDataGridViewTextBoxColumn";
-            this.totalAfterTaxDataGridViewTextBoxColumn.Width = 102;
-            // 
-            // totalDataGridViewTextBoxColumn
-            // 
-            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
-            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
-            this.totalDataGridViewTextBoxColumn.Width = 56;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Notes";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Notes";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 60;
-            // 
-            // bindedToJournalEntryDataGridViewTextBoxColumn
-            // 
-            this.bindedToJournalEntryDataGridViewTextBoxColumn.DataPropertyName = "Binded to Journal Entry";
-            this.bindedToJournalEntryDataGridViewTextBoxColumn.HeaderText = "Binded to Journal Entry";
-            this.bindedToJournalEntryDataGridViewTextBoxColumn.Name = "bindedToJournalEntryDataGridViewTextBoxColumn";
-            this.bindedToJournalEntryDataGridViewTextBoxColumn.Width = 141;
-            // 
-            // bindedToJournalDataGridViewTextBoxColumn
-            // 
-            this.bindedToJournalDataGridViewTextBoxColumn.DataPropertyName = "Binded to Journal";
-            this.bindedToJournalDataGridViewTextBoxColumn.HeaderText = "Binded to Journal";
-            this.bindedToJournalDataGridViewTextBoxColumn.Name = "bindedToJournalDataGridViewTextBoxColumn";
-            this.bindedToJournalDataGridViewTextBoxColumn.Width = 114;
-            // 
-            // invoiceBindingSource
-            // 
-            this.invoiceBindingSource.DataMember = "invoice";
-            this.invoiceBindingSource.DataSource = this.invoice_dataset;
-            // 
-            // invoice_dataset
-            // 
-            this.invoice_dataset.DataSetName = "invoice_dataset";
-            this.invoice_dataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dgv.Enter += new System.EventHandler(this.dgv_Enter);
             // 
             // stwin
             // 
@@ -3075,40 +2840,40 @@
             // movtolef
             // 
             this.movtolef.Name = "movtolef";
-            this.movtolef.Size = new System.Drawing.Size(131, 22);
+            this.movtolef.Size = new System.Drawing.Size(130, 22);
             this.movtolef.Text = "To Left";
             this.movtolef.Click += new System.EventHandler(this.movtolef_clc);
             // 
             // toRightToolStripMenuItem
             // 
             this.toRightToolStripMenuItem.Name = "toRightToolStripMenuItem";
-            this.toRightToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.toRightToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.toRightToolStripMenuItem.Text = "To Right";
             this.toRightToolStripMenuItem.Click += new System.EventHandler(this.movtor);
             // 
             // tobott
             // 
             this.tobott.Name = "tobott";
-            this.tobott.Size = new System.Drawing.Size(131, 22);
+            this.tobott.Size = new System.Drawing.Size(130, 22);
             this.tobott.Text = "To Bottom";
             this.tobott.Click += new System.EventHandler(this.tobott_Click);
             // 
             // totop
             // 
             this.totop.Name = "totop";
-            this.totop.Size = new System.Drawing.Size(131, 22);
+            this.totop.Size = new System.Drawing.Size(130, 22);
             this.totop.Text = "To Top";
             this.totop.Click += new System.EventHandler(this.totop_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(128, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(127, 6);
             // 
             // freesty
             // 
             this.freesty.Name = "freesty";
-            this.freesty.Size = new System.Drawing.Size(131, 22);
+            this.freesty.Size = new System.Drawing.Size(130, 22);
             this.freesty.Text = "Free Style";
             this.freesty.Click += new System.EventHandler(this.freesty_Click);
             // 
@@ -3131,12 +2896,12 @@
             this.tswin.Size = new System.Drawing.Size(802, 25);
             this.tswin.TabIndex = 15;
             this.tswin.Text = "toolStrip1";
-            this.tswin.MouseUp += new System.Windows.Forms.MouseEventHandler(this.tswin_MouseUp);
-            this.tswin.DoubleClick += new System.EventHandler(this.mvewin_ButtonClick);
-            this.tswin.MouseEnter += new System.EventHandler(this.tswin_MouseEnter);
-            this.tswin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tswin_MouseDown);
-            this.tswin.MouseLeave += new System.EventHandler(this.tswin_MouseLeave);
             this.tswin.Click += new System.EventHandler(this.tswin_Click);
+            this.tswin.DoubleClick += new System.EventHandler(this.mvewin_ButtonClick);
+            this.tswin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tswin_MouseDown);
+            this.tswin.MouseEnter += new System.EventHandler(this.tswin_MouseEnter);
+            this.tswin.MouseLeave += new System.EventHandler(this.tswin_MouseLeave);
+            this.tswin.MouseUp += new System.Windows.Forms.MouseEventHandler(this.tswin_MouseUp);
             // 
             // cnbnn1
             // 
@@ -3452,8 +3217,8 @@
             this.tbxfned.Name = "tbxfned";
             this.tbxfned.Size = new System.Drawing.Size(100, 25);
             this.tbxfned.Text = "Entry";
-            this.tbxfned.Leave += new System.EventHandler(this.tbxfned_Leave);
             this.tbxfned.Enter += new System.EventHandler(this.tbxfned_Enter);
+            this.tbxfned.Leave += new System.EventHandler(this.tbxfned_Leave);
             this.tbxfned.MouseEnter += new System.EventHandler(this.tvtxt1_MouseEnter);
             this.tbxfned.MouseLeave += new System.EventHandler(this.tvtxt1_MouseLeave);
             // 
@@ -3589,7 +3354,7 @@
             this.readAnWriteToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.readAnWriteToolStripMenuItem.Text = "Read and Write (Permissions)";
             this.readAnWriteToolStripMenuItem.ToolTipText = "Allows You to Sett whether Anyone Can Write to your Current\r\nData-Base or only Re" +
-                "ad From it.";
+    "ad From it.";
             // 
             // toolStripMenuItem403
             // 
@@ -3714,7 +3479,7 @@
             this.toolStripButton1.Size = new System.Drawing.Size(61, 22);
             this.toolStripButton1.Text = "View";
             this.toolStripButton1.ToolTipText = "Change visual settings of the viewer such \r\nas high contrast, text size, text col" +
-                "or...";
+    "or...";
             // 
             // viewToolStripMenuItem1
             // 
@@ -4610,7 +4375,7 @@
             this.dynayes.Image = global::Main.Properties.Resources.tick;
             this.dynayes.ImageTransparentColor = System.Drawing.Color.White;
             this.dynayes.Name = "dynayes";
-            this.dynayes.Size = new System.Drawing.Size(92, 22);
+            this.dynayes.Size = new System.Drawing.Size(91, 22);
             this.dynayes.Text = "Yes";
             this.dynayes.Click += new System.EventHandler(this.dynayes_Click);
             // 
@@ -4619,7 +4384,7 @@
             this.dynano.Image = global::Main.Properties.Resources.ex;
             this.dynano.ImageTransparentColor = System.Drawing.Color.White;
             this.dynano.Name = "dynano";
-            this.dynano.Size = new System.Drawing.Size(92, 22);
+            this.dynano.Size = new System.Drawing.Size(91, 22);
             this.dynano.Text = "No";
             this.dynano.Click += new System.EventHandler(this.dynano_Click);
             // 
@@ -4649,7 +4414,7 @@
             this.ys_autsve.Image = global::Main.Properties.Resources.tick;
             this.ys_autsve.ImageTransparentColor = System.Drawing.Color.White;
             this.ys_autsve.Name = "ys_autsve";
-            this.ys_autsve.Size = new System.Drawing.Size(92, 22);
+            this.ys_autsve.Size = new System.Drawing.Size(91, 22);
             this.ys_autsve.Text = "Yes";
             this.ys_autsve.Click += new System.EventHandler(this.ys_autsve_Click);
             // 
@@ -4658,7 +4423,7 @@
             this.no_autsve.Image = global::Main.Properties.Resources.ex;
             this.no_autsve.ImageTransparentColor = System.Drawing.Color.White;
             this.no_autsve.Name = "no_autsve";
-            this.no_autsve.Size = new System.Drawing.Size(92, 22);
+            this.no_autsve.Size = new System.Drawing.Size(91, 22);
             this.no_autsve.Text = "No";
             this.no_autsve.Click += new System.EventHandler(this.ys_autsve_Click);
             // 
@@ -4913,9 +4678,9 @@
             this.clse.Name = "clse";
             this.clse.Size = new System.Drawing.Size(32, 22);
             this.clse.Text = "Close";
-            this.clse.MouseLeave += new System.EventHandler(this.clse_MouseLeave);
             this.clse.ButtonClick += new System.EventHandler(this.clsejournclc);
             this.clse.MouseEnter += new System.EventHandler(this.clse_MouseEnter);
+            this.clse.MouseLeave += new System.EventHandler(this.clse_MouseLeave);
             // 
             // applicationDirectorToolStripMenuItem
             // 
@@ -4947,9 +4712,9 @@
             this.connlbl.Size = new System.Drawing.Size(104, 22);
             this.connlbl.Text = "Not Connected";
             this.connlbl.ToolTipText = "Indicates whether you are connected \r\nto a datasource or not and its name";
+            this.connlbl.Click += new System.EventHandler(this.connlbl_Click);
             this.connlbl.MouseEnter += new System.EventHandler(this.connlblme);
             this.connlbl.MouseLeave += new System.EventHandler(this.connlblml);
-            this.connlbl.Click += new System.EventHandler(this.connlbl_Click);
             // 
             // toolStripButton4
             // 
@@ -5106,8 +4871,8 @@
             this.zz.Name = "zz";
             this.zz.Size = new System.Drawing.Size(176, 26);
             this.zz.TabIndex = 34;
-            this.zz.MouseLeave += new System.EventHandler(this.zz_MouseLeave);
             this.zz.MouseEnter += new System.EventHandler(this.zz_MouseEnter);
+            this.zz.MouseLeave += new System.EventHandler(this.zz_MouseLeave);
             // 
             // toolStrip5
             // 
@@ -5446,6 +5211,306 @@
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(0, 30);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 13);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Pick a Customer";
+            // 
+            // prod_box
+            // 
+            this.prod_box.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.prod_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prod_box.Controls.Add(this.button9);
+            this.prod_box.Controls.Add(this.panel1);
+            this.prod_box.Controls.Add(this.button7);
+            this.prod_box.Controls.Add(this.textBox5);
+            this.prod_box.Controls.Add(this.button8);
+            this.prod_box.Controls.Add(this.dataGridView2);
+            this.prod_box.Controls.Add(this.label5);
+            this.prod_box.Location = new System.Drawing.Point(626, 12);
+            this.prod_box.Name = "prod_box";
+            this.prod_box.Size = new System.Drawing.Size(247, 175);
+            this.prod_box.TabIndex = 36;
+            this.prod_box.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button9.ImageIndex = 10;
+            this.button9.ImageList = this.il;
+            this.button9.Location = new System.Drawing.Point(84, 144);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(22, 23);
+            this.button9.TabIndex = 39;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Location = new System.Drawing.Point(4, 173);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(238, 108);
+            this.panel1.TabIndex = 38;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(17, 71);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(176, 17);
+            this.radioButton2.TabIndex = 38;
+            this.radioButton2.Text = "Consumer Price + Taxation Cost";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Click += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(207, 13);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Price has Multiple Values Please Pick One";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(17, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(99, 17);
+            this.radioButton1.TabIndex = 36;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Consumer Price";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Click += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button7.ImageIndex = 9;
+            this.button7.ImageList = this.il;
+            this.button7.Location = new System.Drawing.Point(216, 144);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(25, 23);
+            this.button7.TabIndex = 35;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Location = new System.Drawing.Point(110, 146);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 34;
+            this.textBox5.Text = "Search";
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button8.Location = new System.Drawing.Point(4, 144);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(77, 23);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "Show All";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productNameDataGridViewTextBoxColumn,
+            this.productIDNumberDataGridViewTextBoxColumn,
+            this.productTypeDataGridViewTextBoxColumn,
+            this.isCurrentProjectDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn6,
+            this.productConsumerPriceDataGridViewTextBoxColumn,
+            this.productTaxationCostDataGridViewTextBoxColumn,
+            this.wareHouseDataGridViewTextBoxColumn,
+            this.wareHouseAddressDataGridViewTextBoxColumn1,
+            this.wareHouseSectorDataGridViewTextBoxColumn,
+            this.wareHouseAisleDataGridViewTextBoxColumn,
+            this.wareHouseShelfDataGridViewTextBoxColumn,
+            this.otherLoacationInformationDataGridViewTextBoxColumn,
+            this.imagePathDataGridViewTextBoxColumn,
+            this.supplyChainDataDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.prodmgmtBindingSource;
+            this.dataGridView2.EnableHeadersVisualStyles = false;
+            this.dataGridView2.Location = new System.Drawing.Point(4, 47);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(238, 90);
+            this.dataGridView2.TabIndex = 32;
+            this.dataGridView2.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_CellMouseClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(0, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 13);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Pick a Product";
+            // 
+            // tms
+            // 
+            this.tms.Interval = 750;
+            this.tms.Tick += new System.EventHandler(this.tms_Tick);
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product Name";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "Product Name";
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productIDNumberDataGridViewTextBoxColumn
+            // 
+            this.productIDNumberDataGridViewTextBoxColumn.DataPropertyName = "Product ID Number";
+            this.productIDNumberDataGridViewTextBoxColumn.HeaderText = "Product ID Number";
+            this.productIDNumberDataGridViewTextBoxColumn.Name = "productIDNumberDataGridViewTextBoxColumn";
+            this.productIDNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productIDNumberDataGridViewTextBoxColumn.Width = 123;
+            // 
+            // productTypeDataGridViewTextBoxColumn
+            // 
+            this.productTypeDataGridViewTextBoxColumn.DataPropertyName = "Product Type";
+            this.productTypeDataGridViewTextBoxColumn.HeaderText = "Product Type";
+            this.productTypeDataGridViewTextBoxColumn.Name = "productTypeDataGridViewTextBoxColumn";
+            this.productTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productTypeDataGridViewTextBoxColumn.Width = 96;
+            // 
+            // isCurrentProjectDataGridViewTextBoxColumn
+            // 
+            this.isCurrentProjectDataGridViewTextBoxColumn.DataPropertyName = "Is Current Project";
+            this.isCurrentProjectDataGridViewTextBoxColumn.HeaderText = "Is Current Project";
+            this.isCurrentProjectDataGridViewTextBoxColumn.Name = "isCurrentProjectDataGridViewTextBoxColumn";
+            this.isCurrentProjectDataGridViewTextBoxColumn.ReadOnly = true;
+            this.isCurrentProjectDataGridViewTextBoxColumn.Width = 113;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Currency";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Currency";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 74;
+            // 
+            // productConsumerPriceDataGridViewTextBoxColumn
+            // 
+            this.productConsumerPriceDataGridViewTextBoxColumn.DataPropertyName = "Product Consumer Price";
+            this.productConsumerPriceDataGridViewTextBoxColumn.HeaderText = "Product Consumer Price";
+            this.productConsumerPriceDataGridViewTextBoxColumn.Name = "productConsumerPriceDataGridViewTextBoxColumn";
+            this.productConsumerPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productConsumerPriceDataGridViewTextBoxColumn.Width = 146;
+            // 
+            // productTaxationCostDataGridViewTextBoxColumn
+            // 
+            this.productTaxationCostDataGridViewTextBoxColumn.DataPropertyName = "Product Taxation Cost";
+            this.productTaxationCostDataGridViewTextBoxColumn.HeaderText = "Product Taxation Cost";
+            this.productTaxationCostDataGridViewTextBoxColumn.Name = "productTaxationCostDataGridViewTextBoxColumn";
+            this.productTaxationCostDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productTaxationCostDataGridViewTextBoxColumn.Width = 137;
+            // 
+            // wareHouseDataGridViewTextBoxColumn
+            // 
+            this.wareHouseDataGridViewTextBoxColumn.DataPropertyName = "Ware House";
+            this.wareHouseDataGridViewTextBoxColumn.HeaderText = "Ware House";
+            this.wareHouseDataGridViewTextBoxColumn.Name = "wareHouseDataGridViewTextBoxColumn";
+            this.wareHouseDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wareHouseDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // wareHouseAddressDataGridViewTextBoxColumn1
+            // 
+            this.wareHouseAddressDataGridViewTextBoxColumn1.DataPropertyName = "Ware House Address";
+            this.wareHouseAddressDataGridViewTextBoxColumn1.HeaderText = "Ware House Address";
+            this.wareHouseAddressDataGridViewTextBoxColumn1.Name = "wareHouseAddressDataGridViewTextBoxColumn1";
+            this.wareHouseAddressDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.wareHouseAddressDataGridViewTextBoxColumn1.Width = 133;
+            // 
+            // wareHouseSectorDataGridViewTextBoxColumn
+            // 
+            this.wareHouseSectorDataGridViewTextBoxColumn.DataPropertyName = "Ware House Sector";
+            this.wareHouseSectorDataGridViewTextBoxColumn.HeaderText = "Ware House Sector";
+            this.wareHouseSectorDataGridViewTextBoxColumn.Name = "wareHouseSectorDataGridViewTextBoxColumn";
+            this.wareHouseSectorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wareHouseSectorDataGridViewTextBoxColumn.Width = 126;
+            // 
+            // wareHouseAisleDataGridViewTextBoxColumn
+            // 
+            this.wareHouseAisleDataGridViewTextBoxColumn.DataPropertyName = "Ware House Aisle";
+            this.wareHouseAisleDataGridViewTextBoxColumn.HeaderText = "Ware House Aisle";
+            this.wareHouseAisleDataGridViewTextBoxColumn.Name = "wareHouseAisleDataGridViewTextBoxColumn";
+            this.wareHouseAisleDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wareHouseAisleDataGridViewTextBoxColumn.Width = 117;
+            // 
+            // wareHouseShelfDataGridViewTextBoxColumn
+            // 
+            this.wareHouseShelfDataGridViewTextBoxColumn.DataPropertyName = "Ware House Shelf";
+            this.wareHouseShelfDataGridViewTextBoxColumn.HeaderText = "Ware House Shelf";
+            this.wareHouseShelfDataGridViewTextBoxColumn.Name = "wareHouseShelfDataGridViewTextBoxColumn";
+            this.wareHouseShelfDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wareHouseShelfDataGridViewTextBoxColumn.Width = 119;
+            // 
+            // otherLoacationInformationDataGridViewTextBoxColumn
+            // 
+            this.otherLoacationInformationDataGridViewTextBoxColumn.DataPropertyName = "Other Loacation Information";
+            this.otherLoacationInformationDataGridViewTextBoxColumn.HeaderText = "Other Loacation Information";
+            this.otherLoacationInformationDataGridViewTextBoxColumn.Name = "otherLoacationInformationDataGridViewTextBoxColumn";
+            this.otherLoacationInformationDataGridViewTextBoxColumn.ReadOnly = true;
+            this.otherLoacationInformationDataGridViewTextBoxColumn.Width = 163;
+            // 
+            // imagePathDataGridViewTextBoxColumn
+            // 
+            this.imagePathDataGridViewTextBoxColumn.DataPropertyName = "Image Path";
+            this.imagePathDataGridViewTextBoxColumn.HeaderText = "Image Path";
+            this.imagePathDataGridViewTextBoxColumn.Name = "imagePathDataGridViewTextBoxColumn";
+            this.imagePathDataGridViewTextBoxColumn.ReadOnly = true;
+            this.imagePathDataGridViewTextBoxColumn.Width = 86;
+            // 
+            // supplyChainDataDataGridViewTextBoxColumn
+            // 
+            this.supplyChainDataDataGridViewTextBoxColumn.DataPropertyName = "Supply Chain Data";
+            this.supplyChainDataDataGridViewTextBoxColumn.HeaderText = "Supply Chain Data";
+            this.supplyChainDataDataGridViewTextBoxColumn.Name = "supplyChainDataDataGridViewTextBoxColumn";
+            this.supplyChainDataDataGridViewTextBoxColumn.ReadOnly = true;
+            this.supplyChainDataDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // prodmgmtBindingSource
+            // 
+            this.prodmgmtBindingSource.DataMember = "Prod_mgmt";
+            this.prodmgmtBindingSource.DataSource = this.prodmgmt_dtst;
+            // 
+            // prodmgmt_dtst
+            // 
+            this.prodmgmt_dtst.DataSetName = "prodmgmt_dtst";
+            this.prodmgmt_dtst.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // corporateNameDataGridViewTextBoxColumn
             // 
             this.corporateNameDataGridViewTextBoxColumn.DataPropertyName = "Corporate Name";
@@ -5664,304 +5729,264 @@
             this.cust_dtst.DataSetName = "Cust_dtst";
             this.cust_dtst.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label12
+            // dataGridViewTextBoxColumn1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(0, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 13);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Pick a Customer";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Serial Number";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Serial Number";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 98;
             // 
-            // prodmgmt_dtst
+            // invoiceReferenceNumberIDDataGridViewTextBoxColumn
             // 
-            this.prodmgmt_dtst.DataSetName = "prodmgmt_dtst";
-            this.prodmgmt_dtst.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.DataPropertyName = "Invoice Reference Number (ID)";
+            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.HeaderText = "Invoice Reference Number (ID)";
+            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.Name = "invoiceReferenceNumberIDDataGridViewTextBoxColumn";
+            this.invoiceReferenceNumberIDDataGridViewTextBoxColumn.Width = 180;
             // 
-            // prodmgmtBindingSource
+            // dateDataGridViewTextBoxColumn
             // 
-            this.prodmgmtBindingSource.DataMember = "Prod_mgmt";
-            this.prodmgmtBindingSource.DataSource = this.prodmgmt_dtst;
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.Width = 55;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Due Date";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Due Date";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 78;
+            // 
+            // billersNameDataGridViewTextBoxColumn
+            // 
+            this.billersNameDataGridViewTextBoxColumn.DataPropertyName = "Billers Name";
+            this.billersNameDataGridViewTextBoxColumn.HeaderText = "Billers Name";
+            this.billersNameDataGridViewTextBoxColumn.Name = "billersNameDataGridViewTextBoxColumn";
+            this.billersNameDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // shippersNameDataGridViewTextBoxColumn
+            // 
+            this.shippersNameDataGridViewTextBoxColumn.DataPropertyName = "Shippers Name";
+            this.shippersNameDataGridViewTextBoxColumn.HeaderText = "Shippers Name";
+            this.shippersNameDataGridViewTextBoxColumn.Name = "shippersNameDataGridViewTextBoxColumn";
+            this.shippersNameDataGridViewTextBoxColumn.Width = 104;
+            // 
+            // billToAddressDataGridViewTextBoxColumn
+            // 
+            this.billToAddressDataGridViewTextBoxColumn.DataPropertyName = "Bill To (Address)";
+            this.billToAddressDataGridViewTextBoxColumn.HeaderText = "Bill To (Address)";
+            this.billToAddressDataGridViewTextBoxColumn.Name = "billToAddressDataGridViewTextBoxColumn";
+            this.billToAddressDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // shipToAddressDataGridViewTextBoxColumn
+            // 
+            this.shipToAddressDataGridViewTextBoxColumn.DataPropertyName = "Ship To (Address)";
+            this.shipToAddressDataGridViewTextBoxColumn.HeaderText = "Ship To (Address)";
+            this.shipToAddressDataGridViewTextBoxColumn.Name = "shipToAddressDataGridViewTextBoxColumn";
+            this.shipToAddressDataGridViewTextBoxColumn.Width = 116;
+            // 
+            // billToContactDataGridViewTextBoxColumn
+            // 
+            this.billToContactDataGridViewTextBoxColumn.DataPropertyName = "Bill To Contact";
+            this.billToContactDataGridViewTextBoxColumn.HeaderText = "Bill To Contact";
+            this.billToContactDataGridViewTextBoxColumn.Name = "billToContactDataGridViewTextBoxColumn";
+            this.billToContactDataGridViewTextBoxColumn.Width = 101;
+            // 
+            // shipToContactDataGridViewTextBoxColumn
+            // 
+            this.shipToContactDataGridViewTextBoxColumn.DataPropertyName = "Ship To Contact";
+            this.shipToContactDataGridViewTextBoxColumn.HeaderText = "Ship To Contact";
+            this.shipToContactDataGridViewTextBoxColumn.Name = "shipToContactDataGridViewTextBoxColumn";
+            this.shipToContactDataGridViewTextBoxColumn.Width = 109;
+            // 
+            // billToFaxDataGridViewTextBoxColumn
+            // 
+            this.billToFaxDataGridViewTextBoxColumn.DataPropertyName = "Bill To Fax";
+            this.billToFaxDataGridViewTextBoxColumn.HeaderText = "Bill To Fax";
+            this.billToFaxDataGridViewTextBoxColumn.Name = "billToFaxDataGridViewTextBoxColumn";
+            this.billToFaxDataGridViewTextBoxColumn.Width = 81;
+            // 
+            // shipToFaxDataGridViewTextBoxColumn
+            // 
+            this.shipToFaxDataGridViewTextBoxColumn.DataPropertyName = "Ship To Fax";
+            this.shipToFaxDataGridViewTextBoxColumn.HeaderText = "Ship To Fax";
+            this.shipToFaxDataGridViewTextBoxColumn.Name = "shipToFaxDataGridViewTextBoxColumn";
+            this.shipToFaxDataGridViewTextBoxColumn.Width = 89;
+            // 
+            // billToEmailIDDataGridViewTextBoxColumn
+            // 
+            this.billToEmailIDDataGridViewTextBoxColumn.DataPropertyName = "Bill To Email ID";
+            this.billToEmailIDDataGridViewTextBoxColumn.HeaderText = "Bill To Email ID";
+            this.billToEmailIDDataGridViewTextBoxColumn.Name = "billToEmailIDDataGridViewTextBoxColumn";
+            this.billToEmailIDDataGridViewTextBoxColumn.Width = 103;
+            // 
+            // shipToEmailIDDataGridViewTextBoxColumn
+            // 
+            this.shipToEmailIDDataGridViewTextBoxColumn.DataPropertyName = "Ship To Email ID";
+            this.shipToEmailIDDataGridViewTextBoxColumn.HeaderText = "Ship To Email ID";
+            this.shipToEmailIDDataGridViewTextBoxColumn.Name = "shipToEmailIDDataGridViewTextBoxColumn";
+            this.shipToEmailIDDataGridViewTextBoxColumn.Width = 111;
+            // 
+            // itemDataGridViewTextBoxColumn
+            // 
+            this.itemDataGridViewTextBoxColumn.DataPropertyName = "Item";
+            this.itemDataGridViewTextBoxColumn.HeaderText = "Item";
+            this.itemDataGridViewTextBoxColumn.Name = "itemDataGridViewTextBoxColumn";
+            this.itemDataGridViewTextBoxColumn.Width = 52;
+            // 
+            // itemIDDataGridViewTextBoxColumn
+            // 
+            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item ID";
+            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item ID";
+            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
+            this.itemIDDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // itemDescriptionDataGridViewTextBoxColumn
+            // 
+            this.itemDescriptionDataGridViewTextBoxColumn.DataPropertyName = "Item Description";
+            this.itemDescriptionDataGridViewTextBoxColumn.HeaderText = "Item Description";
+            this.itemDescriptionDataGridViewTextBoxColumn.Name = "itemDescriptionDataGridViewTextBoxColumn";
+            this.itemDescriptionDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Unit Price";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Unit Price";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 78;
+            // 
+            // unitsOrderedDataGridViewTextBoxColumn
+            // 
+            this.unitsOrderedDataGridViewTextBoxColumn.DataPropertyName = "Units Ordered";
+            this.unitsOrderedDataGridViewTextBoxColumn.HeaderText = "Units Ordered";
+            this.unitsOrderedDataGridViewTextBoxColumn.Name = "unitsOrderedDataGridViewTextBoxColumn";
+            this.unitsOrderedDataGridViewTextBoxColumn.Width = 97;
+            // 
+            // unitsDeliveredDataGridViewTextBoxColumn
+            // 
+            this.unitsDeliveredDataGridViewTextBoxColumn.DataPropertyName = "Units Delivered";
+            this.unitsDeliveredDataGridViewTextBoxColumn.HeaderText = "Units Delivered";
+            this.unitsDeliveredDataGridViewTextBoxColumn.Name = "unitsDeliveredDataGridViewTextBoxColumn";
+            this.unitsDeliveredDataGridViewTextBoxColumn.Width = 104;
+            // 
+            // costDataGridViewTextBoxColumn
+            // 
+            this.costDataGridViewTextBoxColumn.DataPropertyName = "Cost";
+            this.costDataGridViewTextBoxColumn.HeaderText = "Cost";
+            this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
+            this.costDataGridViewTextBoxColumn.Width = 53;
+            // 
+            // profitDataGridViewTextBoxColumn
+            // 
+            this.profitDataGridViewTextBoxColumn.DataPropertyName = "Profit";
+            this.profitDataGridViewTextBoxColumn.HeaderText = "Profit";
+            this.profitDataGridViewTextBoxColumn.Name = "profitDataGridViewTextBoxColumn";
+            this.profitDataGridViewTextBoxColumn.Width = 56;
+            // 
+            // owingDataGridViewTextBoxColumn
+            // 
+            this.owingDataGridViewTextBoxColumn.DataPropertyName = "Owing";
+            this.owingDataGridViewTextBoxColumn.HeaderText = "Owing";
+            this.owingDataGridViewTextBoxColumn.Name = "owingDataGridViewTextBoxColumn";
+            this.owingDataGridViewTextBoxColumn.Width = 62;
+            // 
+            // owingAmountDataGridViewTextBoxColumn
+            // 
+            this.owingAmountDataGridViewTextBoxColumn.DataPropertyName = "Owing Amount";
+            this.owingAmountDataGridViewTextBoxColumn.HeaderText = "Owing Amount";
+            this.owingAmountDataGridViewTextBoxColumn.Name = "owingAmountDataGridViewTextBoxColumn";
+            this.owingAmountDataGridViewTextBoxColumn.Width = 101;
+            // 
+            // paidDataGridViewTextBoxColumn
+            // 
+            this.paidDataGridViewTextBoxColumn.DataPropertyName = "Paid";
+            this.paidDataGridViewTextBoxColumn.HeaderText = "Paid";
+            this.paidDataGridViewTextBoxColumn.Name = "paidDataGridViewTextBoxColumn";
+            this.paidDataGridViewTextBoxColumn.Width = 53;
+            // 
+            // paidAmountDataGridViewTextBoxColumn
+            // 
+            this.paidAmountDataGridViewTextBoxColumn.DataPropertyName = "Paid Amount";
+            this.paidAmountDataGridViewTextBoxColumn.HeaderText = "Paid Amount";
+            this.paidAmountDataGridViewTextBoxColumn.Name = "paidAmountDataGridViewTextBoxColumn";
+            this.paidAmountDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // vatRateDataGridViewTextBoxColumn
+            // 
+            this.vatRateDataGridViewTextBoxColumn.DataPropertyName = "Vat Rate (%)";
+            this.vatRateDataGridViewTextBoxColumn.HeaderText = "Vat Rate (%)";
+            this.vatRateDataGridViewTextBoxColumn.Name = "vatRateDataGridViewTextBoxColumn";
+            this.vatRateDataGridViewTextBoxColumn.Width = 91;
+            // 
+            // vatDataGridViewTextBoxColumn
+            // 
+            this.vatDataGridViewTextBoxColumn.DataPropertyName = "Vat";
+            this.vatDataGridViewTextBoxColumn.HeaderText = "Vat";
+            this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
+            this.vatDataGridViewTextBoxColumn.Width = 48;
+            // 
+            // otherTaxRateDataGridViewTextBoxColumn
+            // 
+            this.otherTaxRateDataGridViewTextBoxColumn.DataPropertyName = "Other Tax Rate (%)";
+            this.otherTaxRateDataGridViewTextBoxColumn.HeaderText = "Other Tax Rate (%)";
+            this.otherTaxRateDataGridViewTextBoxColumn.Name = "otherTaxRateDataGridViewTextBoxColumn";
+            this.otherTaxRateDataGridViewTextBoxColumn.Width = 122;
+            // 
+            // otherTaxDataGridViewTextBoxColumn
+            // 
+            this.otherTaxDataGridViewTextBoxColumn.DataPropertyName = "Other Tax";
+            this.otherTaxDataGridViewTextBoxColumn.HeaderText = "Other Tax";
+            this.otherTaxDataGridViewTextBoxColumn.Name = "otherTaxDataGridViewTextBoxColumn";
+            this.otherTaxDataGridViewTextBoxColumn.Width = 79;
+            // 
+            // totalAfterTaxDataGridViewTextBoxColumn
+            // 
+            this.totalAfterTaxDataGridViewTextBoxColumn.DataPropertyName = "Total After Tax";
+            this.totalAfterTaxDataGridViewTextBoxColumn.HeaderText = "Total After Tax";
+            this.totalAfterTaxDataGridViewTextBoxColumn.Name = "totalAfterTaxDataGridViewTextBoxColumn";
+            this.totalAfterTaxDataGridViewTextBoxColumn.Width = 102;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.Width = 56;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Notes";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Notes";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 60;
+            // 
+            // bindedToJournalEntryDataGridViewTextBoxColumn
+            // 
+            this.bindedToJournalEntryDataGridViewTextBoxColumn.DataPropertyName = "Binded to Journal Entry";
+            this.bindedToJournalEntryDataGridViewTextBoxColumn.HeaderText = "Binded to Journal Entry";
+            this.bindedToJournalEntryDataGridViewTextBoxColumn.Name = "bindedToJournalEntryDataGridViewTextBoxColumn";
+            this.bindedToJournalEntryDataGridViewTextBoxColumn.Width = 141;
+            // 
+            // bindedToJournalDataGridViewTextBoxColumn
+            // 
+            this.bindedToJournalDataGridViewTextBoxColumn.DataPropertyName = "Binded to Journal";
+            this.bindedToJournalDataGridViewTextBoxColumn.HeaderText = "Binded to Journal";
+            this.bindedToJournalDataGridViewTextBoxColumn.Name = "bindedToJournalDataGridViewTextBoxColumn";
+            this.bindedToJournalDataGridViewTextBoxColumn.Width = 114;
+            // 
+            // invoiceBindingSource
+            // 
+            this.invoiceBindingSource.DataMember = "invoice";
+            this.invoiceBindingSource.DataSource = this.invoice_dataset;
+            // 
+            // invoice_dataset
+            // 
+            this.invoice_dataset.DataSetName = "invoice_dataset";
+            this.invoice_dataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // prod_mgmtTableAdapter
             // 
             this.prod_mgmtTableAdapter.ClearBeforeFill = true;
-            // 
-            // prod_box
-            // 
-            this.prod_box.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.prod_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.prod_box.Controls.Add(this.button9);
-            this.prod_box.Controls.Add(this.panel1);
-            this.prod_box.Controls.Add(this.button7);
-            this.prod_box.Controls.Add(this.textBox5);
-            this.prod_box.Controls.Add(this.button8);
-            this.prod_box.Controls.Add(this.dataGridView2);
-            this.prod_box.Controls.Add(this.label5);
-            this.prod_box.Location = new System.Drawing.Point(626, 12);
-            this.prod_box.Name = "prod_box";
-            this.prod_box.Size = new System.Drawing.Size(247, 175);
-            this.prod_box.TabIndex = 36;
-            this.prod_box.Visible = false;
-            // 
-            // button9
-            // 
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button9.ImageIndex = 10;
-            this.button9.ImageList = this.il;
-            this.button9.Location = new System.Drawing.Point(84, 144);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(22, 23);
-            this.button9.TabIndex = 39;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(4, 173);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 108);
-            this.panel1.TabIndex = 38;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(17, 71);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(176, 17);
-            this.radioButton2.TabIndex = 38;
-            this.radioButton2.Text = "Consumer Price + Taxation Cost";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Click += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(207, 13);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Price has Multiple Values Please Pick One";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(17, 47);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 17);
-            this.radioButton1.TabIndex = 36;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Consumer Price";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Click += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button7.ImageIndex = 9;
-            this.button7.ImageList = this.il;
-            this.button7.Location = new System.Drawing.Point(216, 144);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(25, 23);
-            this.button7.TabIndex = 35;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(110, 146);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 34;
-            this.textBox5.Text = "Search";
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button8.Location = new System.Drawing.Point(4, 144);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(77, 23);
-            this.button8.TabIndex = 33;
-            this.button8.Text = "Show All";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productNameDataGridViewTextBoxColumn,
-            this.productIDNumberDataGridViewTextBoxColumn,
-            this.productTypeDataGridViewTextBoxColumn,
-            this.isCurrentProjectDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn6,
-            this.productConsumerPriceDataGridViewTextBoxColumn,
-            this.productTaxationCostDataGridViewTextBoxColumn,
-            this.wareHouseDataGridViewTextBoxColumn,
-            this.wareHouseAddressDataGridViewTextBoxColumn1,
-            this.wareHouseSectorDataGridViewTextBoxColumn,
-            this.wareHouseAisleDataGridViewTextBoxColumn,
-            this.wareHouseShelfDataGridViewTextBoxColumn,
-            this.otherLoacationInformationDataGridViewTextBoxColumn,
-            this.imagePathDataGridViewTextBoxColumn,
-            this.supplyChainDataDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.prodmgmtBindingSource;
-            this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.Location = new System.Drawing.Point(4, 47);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(238, 90);
-            this.dataGridView2.TabIndex = 32;
-            this.dataGridView2.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_CellMouseClick);
-            // 
-            // productNameDataGridViewTextBoxColumn
-            // 
-            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product Name";
-            this.productNameDataGridViewTextBoxColumn.HeaderText = "Product Name";
-            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
-            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productIDNumberDataGridViewTextBoxColumn
-            // 
-            this.productIDNumberDataGridViewTextBoxColumn.DataPropertyName = "Product ID Number";
-            this.productIDNumberDataGridViewTextBoxColumn.HeaderText = "Product ID Number";
-            this.productIDNumberDataGridViewTextBoxColumn.Name = "productIDNumberDataGridViewTextBoxColumn";
-            this.productIDNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productIDNumberDataGridViewTextBoxColumn.Width = 123;
-            // 
-            // productTypeDataGridViewTextBoxColumn
-            // 
-            this.productTypeDataGridViewTextBoxColumn.DataPropertyName = "Product Type";
-            this.productTypeDataGridViewTextBoxColumn.HeaderText = "Product Type";
-            this.productTypeDataGridViewTextBoxColumn.Name = "productTypeDataGridViewTextBoxColumn";
-            this.productTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productTypeDataGridViewTextBoxColumn.Width = 96;
-            // 
-            // isCurrentProjectDataGridViewTextBoxColumn
-            // 
-            this.isCurrentProjectDataGridViewTextBoxColumn.DataPropertyName = "Is Current Project";
-            this.isCurrentProjectDataGridViewTextBoxColumn.HeaderText = "Is Current Project";
-            this.isCurrentProjectDataGridViewTextBoxColumn.Name = "isCurrentProjectDataGridViewTextBoxColumn";
-            this.isCurrentProjectDataGridViewTextBoxColumn.ReadOnly = true;
-            this.isCurrentProjectDataGridViewTextBoxColumn.Width = 113;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Currency";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Currency";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 74;
-            // 
-            // productConsumerPriceDataGridViewTextBoxColumn
-            // 
-            this.productConsumerPriceDataGridViewTextBoxColumn.DataPropertyName = "Product Consumer Price";
-            this.productConsumerPriceDataGridViewTextBoxColumn.HeaderText = "Product Consumer Price";
-            this.productConsumerPriceDataGridViewTextBoxColumn.Name = "productConsumerPriceDataGridViewTextBoxColumn";
-            this.productConsumerPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productConsumerPriceDataGridViewTextBoxColumn.Width = 146;
-            // 
-            // productTaxationCostDataGridViewTextBoxColumn
-            // 
-            this.productTaxationCostDataGridViewTextBoxColumn.DataPropertyName = "Product Taxation Cost";
-            this.productTaxationCostDataGridViewTextBoxColumn.HeaderText = "Product Taxation Cost";
-            this.productTaxationCostDataGridViewTextBoxColumn.Name = "productTaxationCostDataGridViewTextBoxColumn";
-            this.productTaxationCostDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productTaxationCostDataGridViewTextBoxColumn.Width = 137;
-            // 
-            // wareHouseDataGridViewTextBoxColumn
-            // 
-            this.wareHouseDataGridViewTextBoxColumn.DataPropertyName = "Ware House";
-            this.wareHouseDataGridViewTextBoxColumn.HeaderText = "Ware House";
-            this.wareHouseDataGridViewTextBoxColumn.Name = "wareHouseDataGridViewTextBoxColumn";
-            this.wareHouseDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wareHouseDataGridViewTextBoxColumn.Width = 92;
-            // 
-            // wareHouseAddressDataGridViewTextBoxColumn1
-            // 
-            this.wareHouseAddressDataGridViewTextBoxColumn1.DataPropertyName = "Ware House Address";
-            this.wareHouseAddressDataGridViewTextBoxColumn1.HeaderText = "Ware House Address";
-            this.wareHouseAddressDataGridViewTextBoxColumn1.Name = "wareHouseAddressDataGridViewTextBoxColumn1";
-            this.wareHouseAddressDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.wareHouseAddressDataGridViewTextBoxColumn1.Width = 133;
-            // 
-            // wareHouseSectorDataGridViewTextBoxColumn
-            // 
-            this.wareHouseSectorDataGridViewTextBoxColumn.DataPropertyName = "Ware House Sector";
-            this.wareHouseSectorDataGridViewTextBoxColumn.HeaderText = "Ware House Sector";
-            this.wareHouseSectorDataGridViewTextBoxColumn.Name = "wareHouseSectorDataGridViewTextBoxColumn";
-            this.wareHouseSectorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wareHouseSectorDataGridViewTextBoxColumn.Width = 126;
-            // 
-            // wareHouseAisleDataGridViewTextBoxColumn
-            // 
-            this.wareHouseAisleDataGridViewTextBoxColumn.DataPropertyName = "Ware House Aisle";
-            this.wareHouseAisleDataGridViewTextBoxColumn.HeaderText = "Ware House Aisle";
-            this.wareHouseAisleDataGridViewTextBoxColumn.Name = "wareHouseAisleDataGridViewTextBoxColumn";
-            this.wareHouseAisleDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wareHouseAisleDataGridViewTextBoxColumn.Width = 117;
-            // 
-            // wareHouseShelfDataGridViewTextBoxColumn
-            // 
-            this.wareHouseShelfDataGridViewTextBoxColumn.DataPropertyName = "Ware House Shelf";
-            this.wareHouseShelfDataGridViewTextBoxColumn.HeaderText = "Ware House Shelf";
-            this.wareHouseShelfDataGridViewTextBoxColumn.Name = "wareHouseShelfDataGridViewTextBoxColumn";
-            this.wareHouseShelfDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wareHouseShelfDataGridViewTextBoxColumn.Width = 119;
-            // 
-            // otherLoacationInformationDataGridViewTextBoxColumn
-            // 
-            this.otherLoacationInformationDataGridViewTextBoxColumn.DataPropertyName = "Other Loacation Information";
-            this.otherLoacationInformationDataGridViewTextBoxColumn.HeaderText = "Other Loacation Information";
-            this.otherLoacationInformationDataGridViewTextBoxColumn.Name = "otherLoacationInformationDataGridViewTextBoxColumn";
-            this.otherLoacationInformationDataGridViewTextBoxColumn.ReadOnly = true;
-            this.otherLoacationInformationDataGridViewTextBoxColumn.Width = 163;
-            // 
-            // imagePathDataGridViewTextBoxColumn
-            // 
-            this.imagePathDataGridViewTextBoxColumn.DataPropertyName = "Image Path";
-            this.imagePathDataGridViewTextBoxColumn.HeaderText = "Image Path";
-            this.imagePathDataGridViewTextBoxColumn.Name = "imagePathDataGridViewTextBoxColumn";
-            this.imagePathDataGridViewTextBoxColumn.ReadOnly = true;
-            this.imagePathDataGridViewTextBoxColumn.Width = 86;
-            // 
-            // supplyChainDataDataGridViewTextBoxColumn
-            // 
-            this.supplyChainDataDataGridViewTextBoxColumn.DataPropertyName = "Supply Chain Data";
-            this.supplyChainDataDataGridViewTextBoxColumn.HeaderText = "Supply Chain Data";
-            this.supplyChainDataDataGridViewTextBoxColumn.Name = "supplyChainDataDataGridViewTextBoxColumn";
-            this.supplyChainDataDataGridViewTextBoxColumn.ReadOnly = true;
-            this.supplyChainDataDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Pick a Product";
             // 
             // customersTableAdapter
             // 
@@ -5970,11 +5995,6 @@
             // invoiceTableAdapter
             // 
             this.invoiceTableAdapter.ClearBeforeFill = true;
-            // 
-            // tms
-            // 
-            this.tms.Interval = 750;
-            this.tms.Tick += new System.EventHandler(this.tms_Tick);
             // 
             // acc_invce
             // 
@@ -5992,10 +6012,10 @@
             this.DoubleBuffered = true;
             this.Name = "acc_invce";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "acc_invce";
+            this.Text = "Amatrix Invoicing";
+            this.Activated += new System.EventHandler(this.acc_journ_act);
             this.Deactivate += new System.EventHandler(this.acc_journ_dec);
             this.Load += new System.EventHandler(this.acc_invce_Load);
-            this.Activated += new System.EventHandler(this.acc_journ_act);
             this.pnl_journvw.ResumeLayout(false);
             this.summpnl.ResumeLayout(false);
             this.summpnl.PerformLayout();
@@ -6025,8 +6045,6 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoiceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoice_dataset)).EndInit();
             this.stwin.ResumeLayout(false);
             this.stwin.PerformLayout();
             this.tswin.ResumeLayout(false);
@@ -6052,15 +6070,17 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cust_dtst)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodmgmt_dtst)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodmgmtBindingSource)).EndInit();
             this.prod_box.ResumeLayout(false);
             this.prod_box.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodmgmtBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodmgmt_dtst)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cust_dtst)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoiceBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoice_dataset)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

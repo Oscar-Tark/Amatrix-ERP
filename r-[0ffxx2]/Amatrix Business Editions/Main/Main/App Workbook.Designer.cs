@@ -45,6 +45,9 @@
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clsewb = new System.Windows.Forms.ToolStripMenuItem();
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.nrmfnt = new System.Windows.Forms.ToolStripMenuItem();
             this.bldtxt = new System.Windows.Forms.ToolStripMenuItem();
             this.italicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -155,9 +158,6 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.stwb.SuspendLayout();
             this.cntxtwb.SuspendLayout();
@@ -331,6 +331,25 @@
             this.textToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.textToolStripMenuItem.Text = "Edit";
             // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.redoToolStripMenuItem.Text = "Redo";
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(146, 6);
+            // 
             // nrmfnt
             // 
             this.nrmfnt.BackColor = System.Drawing.Color.Transparent;
@@ -389,7 +408,7 @@
             // 
             this.selcapll.BackColor = System.Drawing.Color.Transparent;
             this.selcapll.Name = "selcapll";
-            this.selcapll.Size = new System.Drawing.Size(175, 22);
+            this.selcapll.Size = new System.Drawing.Size(174, 22);
             this.selcapll.Text = "Selected To Capital";
             this.selcapll.Click += new System.EventHandler(this.selcapllclc);
             // 
@@ -399,7 +418,7 @@
             this.capall.Image = global::Main.Properties.Resources.Acap;
             this.capall.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.capall.Name = "capall";
-            this.capall.Size = new System.Drawing.Size(175, 22);
+            this.capall.Size = new System.Drawing.Size(174, 22);
             this.capall.Text = "All Capital";
             this.capall.Click += new System.EventHandler(this.capall_Click);
             // 
@@ -409,7 +428,7 @@
             this.capno.Image = global::Main.Properties.Resources.Anocap;
             this.capno.ImageTransparentColor = System.Drawing.Color.White;
             this.capno.Name = "capno";
-            this.capno.Size = new System.Drawing.Size(175, 22);
+            this.capno.Size = new System.Drawing.Size(174, 22);
             this.capno.Text = "All Normal";
             this.capno.Click += new System.EventHandler(this.capno_Click);
             // 
@@ -431,7 +450,7 @@
             this.ysrgt.Image = global::Main.Properties.Resources.tick;
             this.ysrgt.ImageTransparentColor = System.Drawing.Color.White;
             this.ysrgt.Name = "ysrgt";
-            this.ysrgt.Size = new System.Drawing.Size(92, 22);
+            this.ysrgt.Size = new System.Drawing.Size(91, 22);
             this.ysrgt.Text = "Yes";
             this.ysrgt.Click += new System.EventHandler(this.ysrgtclc);
             // 
@@ -441,7 +460,7 @@
             this.ninetrte.Image = global::Main.Properties.Resources.ex;
             this.ninetrte.ImageTransparentColor = System.Drawing.Color.White;
             this.ninetrte.Name = "ninetrte";
-            this.ninetrte.Size = new System.Drawing.Size(92, 22);
+            this.ninetrte.Size = new System.Drawing.Size(91, 22);
             this.ninetrte.Text = "No";
             this.ninetrte.Click += new System.EventHandler(this.ninetrteclc);
             // 
@@ -474,7 +493,7 @@
             this.actionsToolStripMenuItem.Image = global::Main.Properties.Resources.textbox;
             this.actionsToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
-            this.actionsToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.actionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.actionsToolStripMenuItem.Text = "Text";
             // 
             // cpy
@@ -561,21 +580,21 @@
             // 
             this.topicsToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.topicsToolStripMenuItem.Name = "topicsToolStripMenuItem";
-            this.topicsToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.topicsToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.topicsToolStripMenuItem.Text = "Topics";
             this.topicsToolStripMenuItem.Click += new System.EventHandler(this.topicsToolStripMenuItem_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(106, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(105, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Image = global::Main.Properties.Resources.threeballs;
             this.aboutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -715,7 +734,7 @@
             this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent;
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.Black;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(78, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(77, 17);
             this.toolStripStatusLabel1.Text = "Text Length : ";
             // 
             // txtlngth
@@ -836,7 +855,7 @@
             // 
             this.svewbfle.DefaultExt = "wb";
             this.svewbfle.Filter = "Text Files|*.txt|Developer C++ Files|*.cpp|Developer C# Files|*.cs|Developer Scor" +
-                "pion Files|*scorp|HTML Files|*.html|All files|*.*";
+    "pion Files|*scorp|HTML Files|*.html|All files|*.*";
             this.svewbfle.InitialDirectory = "c:\\";
             this.svewbfle.ShowHelp = true;
             this.svewbfle.SupportMultiDottedExtensions = true;
@@ -854,7 +873,7 @@
             this.opn.DefaultExt = "wb";
             this.opn.FileName = "File Name";
             this.opn.Filter = "Text Files|*.txt|Developer C++ Files|*.cpp|Developer C# Files|*.cs|Developer Scor" +
-                "pion Files|*scorp|HTML Files|*.html|All files|*.*";
+    "pion Files|*scorp|HTML Files|*.html|All files|*.*";
             this.opn.InitialDirectory = "Documents and Settings";
             this.opn.ShowHelp = true;
             this.opn.SupportMultiDottedExtensions = true;
@@ -1003,9 +1022,9 @@
             this.clsemn.Name = "clsemn";
             this.clsemn.Size = new System.Drawing.Size(32, 22);
             this.clsemn.Text = "Close";
-            this.clsemn.MouseLeave += new System.EventHandler(this.clsemn_MouseLeave);
             this.clsemn.ButtonClick += new System.EventHandler(this.clsewb_Click);
             this.clsemn.MouseEnter += new System.EventHandler(this.clsemn_MouseEnter);
+            this.clsemn.MouseLeave += new System.EventHandler(this.clsemn_MouseLeave);
             // 
             // amtrixToolStripMenuItem
             // 
@@ -1128,7 +1147,7 @@
             this.txtlbl.Image = ((System.Drawing.Image)(resources.GetObject("txtlbl.Image")));
             this.txtlbl.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.txtlbl.Name = "txtlbl";
-            this.txtlbl.Size = new System.Drawing.Size(29, 22);
+            this.txtlbl.Size = new System.Drawing.Size(28, 22);
             this.txtlbl.Text = "Text";
             this.txtlbl.ToolTipText = "Text Menu";
             this.txtlbl.Visible = false;
@@ -1148,8 +1167,8 @@
             this.tscbfnt.Text = "Arial";
             this.tscbfnt.ToolTipText = "Font";
             this.tscbfnt.Visible = false;
-            this.tscbfnt.TextChanged += new System.EventHandler(this.tscbfnt_TextChanged);
             this.tscbfnt.Click += new System.EventHandler(this.tscbfnt_Click);
+            this.tscbfnt.TextChanged += new System.EventHandler(this.tscbfnt_TextChanged);
             // 
             // szetxt
             // 
@@ -1207,7 +1226,7 @@
             this.toolStripButton9.Image = global::Main.Properties.Resources.colos;
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(90, 22);
+            this.toolStripButton9.Size = new System.Drawing.Size(89, 22);
             this.toolStripButton9.Text = "Text Color";
             this.toolStripButton9.ToolTipText = "Font Color";
             this.toolStripButton9.Visible = false;
@@ -1286,6 +1305,7 @@
             // 
             this.toolStripTextBox1.BackColor = System.Drawing.Color.Lavender;
             this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
             // 
@@ -1389,8 +1409,8 @@
             this.tbxwbx.Size = new System.Drawing.Size(940, 413);
             this.tbxwbx.TabIndex = 11;
             this.tbxwbx.Text = "";
-            this.tbxwbx.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxwbx_KeyDown);
             this.tbxwbx.TextChanged += new System.EventHandler(this.tbxwbx_TextChanged);
+            this.tbxwbx.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxwbx_KeyDown);
             // 
             // pageSetupDialog1
             // 
@@ -1398,8 +1418,8 @@
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             this.printDocument1.BeginPrint += new System.Drawing.Printing.PrintEventHandler(this.printDocument1_BeginPrint);
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // printDialog1
             // 
@@ -1416,25 +1436,6 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.redoToolStripMenuItem.Text = "Redo";
-            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // App_Workbook
             // 
@@ -1454,9 +1455,9 @@
             this.MinimumSize = new System.Drawing.Size(350, 250);
             this.Name = "App_Workbook";
             this.Text = "Amatrix Work Book";
+            this.Activated += new System.EventHandler(this.Appwbact);
             this.Deactivate += new System.EventHandler(this.Appwbdec);
             this.Load += new System.EventHandler(this.App_Workbook_Load);
-            this.Activated += new System.EventHandler(this.Appwbact);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.stwb.ResumeLayout(false);

@@ -449,48 +449,6 @@ namespace Main
             Properties.Settings.Default.usable_month = Properties.Settings.Default.usable_month + 1;
             Properties.Settings.Default.Save();
 
-            /*try
-            {
-                Bitmap bmp = new Bitmap(Properties.Resources.fle_App_thumb);
-                //bmp.MakeTransparent(Color.White);
-                Icon i = Icon.FromHandle(bmp.GetHicon());
-                Bitmap bmp2 = new Bitmap(Properties.Resources.mgmt_App_thumb);
-                Icon i2 = Icon.FromHandle(bmp2.GetHicon());
-                Bitmap bmp3 = new Bitmap(Properties.Resources.Acc_App_thmb);
-                Icon i3 = Icon.FromHandle(bmp3.GetHicon());
-                Bitmap bmp4 = new Bitmap(Properties.Resources.bus_App_thmb);
-                Icon i4 = Icon.FromHandle(bmp4.GetHicon());
-                Bitmap bmp5 = new Bitmap(Properties.Resources.dbs_App_THUMB);
-                Icon i5 = Icon.FromHandle(bmp5.GetHicon());
-                Bitmap bmp6 = new Bitmap(Properties.Resources.shp_App_thumb);
-                Icon i6 = Icon.FromHandle(bmp6.GetHicon());
-
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton[] tmarr = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton[6];
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton ttbb = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton(i, "Document Studio");
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton ttbb2 = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton(i2, "Managment Studio");
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton ttbb3 = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton(i3, "Accounting Studio");
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton ttbb4 = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton(i4, "Business Studio");
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton ttbb5 = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton(i5, "Database Studio");
-                Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton ttbb6 = new Microsoft.WindowsAPICodePack.Taskbar.ThumbnailToolBarButton(i6, "Shoppe");
-
-                ttbb.Click += new EventHandler<Microsoft.WindowsAPICodePack.Taskbar.ThumbnailButtonClickedEventArgs>(oabtn_Click);
-                ttbb2.Click += new EventHandler<Microsoft.WindowsAPICodePack.Taskbar.ThumbnailButtonClickedEventArgs>(devbtn_Click);
-                ttbb3.Click += new EventHandler<Microsoft.WindowsAPICodePack.Taskbar.ThumbnailButtonClickedEventArgs>(sysbttn_Click);
-                ttbb4.Click += new EventHandler<Microsoft.WindowsAPICodePack.Taskbar.ThumbnailButtonClickedEventArgs>(cs_Click);
-                ttbb5.Click += new EventHandler<Microsoft.WindowsAPICodePack.Taskbar.ThumbnailButtonClickedEventArgs>(mpbttn_Click);
-                ttbb6.Click += new EventHandler<Microsoft.WindowsAPICodePack.Taskbar.ThumbnailButtonClickedEventArgs>(shpbtn_Click);
-
-                tmarr[0] = ttbb;
-                tmarr[1] = ttbb2;
-                tmarr[2] = ttbb3;
-                tmarr[3] = ttbb4;
-                tmarr[4] = ttbb5;
-                tmarr[5] = ttbb6;
-
-                Microsoft.WindowsAPICodePack.Taskbar.TaskbarManager.Instance.ThumbnailToolBars.AddButtons(this.Handle, tmarr);
-            }
-            catch (Exception erty) { }*/
-
             try
             {
                 Bitmap bmp = new Bitmap(Properties.Resources.main_Mnu_Thumb);
@@ -537,7 +495,7 @@ namespace Main
                 Amatrix_Server_Lite asl = new Amatrix_Server_Lite();
             }
             catch { }*/
-            Login();
+            //Login();
             return;
         }
 

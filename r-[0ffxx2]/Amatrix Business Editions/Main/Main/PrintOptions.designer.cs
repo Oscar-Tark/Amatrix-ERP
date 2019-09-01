@@ -192,11 +192,11 @@ namespace PrintDataGrid
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.chkFitToPageWidth);
-            this.panel1.Location = new System.Drawing.Point(16, 14);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(539, 174);
+            this.panel1.Size = new System.Drawing.Size(571, 205);
             this.panel1.TabIndex = 22;
             // 
             // gboxRowsToPrint
@@ -247,9 +247,9 @@ namespace PrintDataGrid
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose Your Data";
+            this.Activated += new System.EventHandler(this.PrintOptions_Activated);
             this.Deactivate += new System.EventHandler(this.PrintOptions_Deactivate);
             this.Load += new System.EventHandler(this.PrintOtions_Load);
-            this.Activated += new System.EventHandler(this.PrintOptions_Activated);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gboxRowsToPrint.ResumeLayout(false);
